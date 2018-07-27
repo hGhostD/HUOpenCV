@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		751EEE8321084428004B115C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751EEE8221084428004B115C /* AppDelegate.swift */; };
+		751EEE8521084428004B115C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751EEE8421084428004B115C /* ViewController.swift */; };
+		751EEE8821084428004B115C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 751EEE8621084428004B115C /* Main.storyboard */; };
+		751EEE8A2108442A004B115C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751EEE892108442A004B115C /* Assets.xcassets */; };
+		751EEE8D2108442A004B115C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 751EEE8B2108442A004B115C /* LaunchScreen.storyboard */; };
+		751EEE9D21084DCD004B115C /* HUOpenCVManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 751EEE9C21084DCD004B115C /* HUOpenCVManager.mm */; };
+		751EEEA021085978004B115C /* images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 751EEE9F21085978004B115C /* images.jpg */; };
+		7579B9C62109658000A6102D /* HUOpenCVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7579B9C52109658000A6102D /* HUOpenCVUITests.swift */; };
+		BD8C9F3F42B7CDA239DE6850 /* Pods_HUOpenCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B4A1418274A819390FB8D33 /* Pods_HUOpenCV.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7579B9C82109658000A6102D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 751EEE7721084428004B115C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 751EEE7E21084428004B115C;
+			remoteInfo = HUOpenCV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B4A1418274A819390FB8D33 /* Pods_HUOpenCV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HUOpenCV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		751EEE7F21084428004B115C /* HUOpenCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HUOpenCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		751EEE8221084428004B115C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		751EEE8421084428004B115C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		751EEE8721084428004B115C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		751EEE892108442A004B115C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		751EEE8C2108442A004B115C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		751EEE8E2108442A004B115C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		751EEE9621084D4C004B115C /* HUOpenCV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HUOpenCV-Bridging-Header.h"; sourceTree = "<group>"; };
+		751EEE9B21084DCD004B115C /* HUOpenCVManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HUOpenCVManager.h; sourceTree = "<group>"; };
+		751EEE9C21084DCD004B115C /* HUOpenCVManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HUOpenCVManager.mm; sourceTree = "<group>"; };
+		751EEE9E21084E39004B115C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		751EEE9F21085978004B115C /* images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpg; sourceTree = "<group>"; };
+		7579B9C32109658000A6102D /* HUOpenCVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HUOpenCVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7579B9C52109658000A6102D /* HUOpenCVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUOpenCVUITests.swift; sourceTree = "<group>"; };
+		7579B9C72109658000A6102D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8E0EFB81F396AE0033B13F6 /* Pods-HUOpenCV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HUOpenCV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HUOpenCV/Pods-HUOpenCV.debug.xcconfig"; sourceTree = "<group>"; };
+		C79A7888CEB26C3AFDD691FD /* Pods-HUOpenCV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HUOpenCV.release.xcconfig"; path = "Pods/Target Support Files/Pods-HUOpenCV/Pods-HUOpenCV.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		751EEE7C21084428004B115C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8C9F3F42B7CDA239DE6850 /* Pods_HUOpenCV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7579B9C02109658000A6102D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		751EEE7621084428004B115C = {
+			isa = PBXGroup;
+			children = (
+				751EEE8121084428004B115C /* HUOpenCV */,
+				7579B9C42109658000A6102D /* HUOpenCVUITests */,
+				751EEE8021084428004B115C /* Products */,
+				803C787BEE195F58F0C5585E /* Pods */,
+				C2AEBFBF0112D4CD406D15DD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		751EEE8021084428004B115C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				751EEE7F21084428004B115C /* HUOpenCV.app */,
+				7579B9C32109658000A6102D /* HUOpenCVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		751EEE8121084428004B115C /* HUOpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				751EEE9521084D38004B115C /* Manager */,
+				751EEE9421084430004B115C /* Other */,
+				751EEE8421084428004B115C /* ViewController.swift */,
+			);
+			path = HUOpenCV;
+			sourceTree = "<group>";
+		};
+		751EEE9421084430004B115C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				751EEE9621084D4C004B115C /* HUOpenCV-Bridging-Header.h */,
+				751EEE8221084428004B115C /* AppDelegate.swift */,
+				751EEE8621084428004B115C /* Main.storyboard */,
+				751EEE892108442A004B115C /* Assets.xcassets */,
+				751EEE8B2108442A004B115C /* LaunchScreen.storyboard */,
+				751EEE8E2108442A004B115C /* Info.plist */,
+				751EEE9E21084E39004B115C /* PrefixHeader.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		751EEE9521084D38004B115C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				751EEE9F21085978004B115C /* images.jpg */,
+				751EEE9B21084DCD004B115C /* HUOpenCVManager.h */,
+				751EEE9C21084DCD004B115C /* HUOpenCVManager.mm */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		7579B9C42109658000A6102D /* HUOpenCVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7579B9C52109658000A6102D /* HUOpenCVUITests.swift */,
+				7579B9C72109658000A6102D /* Info.plist */,
+			);
+			path = HUOpenCVUITests;
+			sourceTree = "<group>";
+		};
+		803C787BEE195F58F0C5585E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8E0EFB81F396AE0033B13F6 /* Pods-HUOpenCV.debug.xcconfig */,
+				C79A7888CEB26C3AFDD691FD /* Pods-HUOpenCV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C2AEBFBF0112D4CD406D15DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B4A1418274A819390FB8D33 /* Pods_HUOpenCV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		751EEE7E21084428004B115C /* HUOpenCV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 751EEE912108442A004B115C /* Build configuration list for PBXNativeTarget "HUOpenCV" */;
+			buildPhases = (
+				96015D6C9878828C1CF174BC /* [CP] Check Pods Manifest.lock */,
+				751EEE7B21084428004B115C /* Sources */,
+				751EEE7C21084428004B115C /* Frameworks */,
+				751EEE7D21084428004B115C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HUOpenCV;
+			productName = HUOpenCV;
+			productReference = 751EEE7F21084428004B115C /* HUOpenCV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7579B9C22109658000A6102D /* HUOpenCVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7579B9CC2109658000A6102D /* Build configuration list for PBXNativeTarget "HUOpenCVUITests" */;
+			buildPhases = (
+				7579B9BF2109658000A6102D /* Sources */,
+				7579B9C02109658000A6102D /* Frameworks */,
+				7579B9C12109658000A6102D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7579B9C92109658000A6102D /* PBXTargetDependency */,
+			);
+			name = HUOpenCVUITests;
+			productName = HUOpenCVUITests;
+			productReference = 7579B9C32109658000A6102D /* HUOpenCVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		751EEE7721084428004B115C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = jw.hu;
+				TargetAttributes = {
+					751EEE7E21084428004B115C = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
+					};
+					7579B9C22109658000A6102D = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 751EEE7E21084428004B115C;
+					};
+				};
+			};
+			buildConfigurationList = 751EEE7A21084428004B115C /* Build configuration list for PBXProject "HUOpenCV" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 751EEE7621084428004B115C;
+			productRefGroup = 751EEE8021084428004B115C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				751EEE7E21084428004B115C /* HUOpenCV */,
+				7579B9C22109658000A6102D /* HUOpenCVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		751EEE7D21084428004B115C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				751EEE8D2108442A004B115C /* LaunchScreen.storyboard in Resources */,
+				751EEE8A2108442A004B115C /* Assets.xcassets in Resources */,
+				751EEE8821084428004B115C /* Main.storyboard in Resources */,
+				751EEEA021085978004B115C /* images.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7579B9C12109658000A6102D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96015D6C9878828C1CF174BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HUOpenCV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		751EEE7B21084428004B115C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				751EEE8521084428004B115C /* ViewController.swift in Sources */,
+				751EEE8321084428004B115C /* AppDelegate.swift in Sources */,
+				751EEE9D21084DCD004B115C /* HUOpenCVManager.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7579B9BF2109658000A6102D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7579B9C62109658000A6102D /* HUOpenCVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7579B9C92109658000A6102D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 751EEE7E21084428004B115C /* HUOpenCV */;
+			targetProxy = 7579B9C82109658000A6102D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		751EEE8621084428004B115C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				751EEE8721084428004B115C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		751EEE8B2108442A004B115C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				751EEE8C2108442A004B115C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		751EEE8F2108442A004B115C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		751EEE902108442A004B115C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		751EEE922108442A004B115C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8E0EFB81F396AE0033B13F6 /* Pods-HUOpenCV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SKZP3W4L7;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HUOpenCV/Other/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "$(SRCROOT)/HUOpenCV/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = s2i.HUOpenCV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HUOpenCV/Other/HUOpenCV-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		751EEE932108442A004B115C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C79A7888CEB26C3AFDD691FD /* Pods-HUOpenCV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SKZP3W4L7;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HUOpenCV/Other/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "$(SRCROOT)/HUOpenCV/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = s2i.HUOpenCV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HUOpenCV/Other/HUOpenCV-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7579B9CA2109658000A6102D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SKZP3W4L7;
+				INFOPLIST_FILE = HUOpenCVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = s2i.HUOpenCVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HUOpenCV;
+			};
+			name = Debug;
+		};
+		7579B9CB2109658000A6102D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SKZP3W4L7;
+				INFOPLIST_FILE = HUOpenCVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = s2i.HUOpenCVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HUOpenCV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		751EEE7A21084428004B115C /* Build configuration list for PBXProject "HUOpenCV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				751EEE8F2108442A004B115C /* Debug */,
+				751EEE902108442A004B115C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		751EEE912108442A004B115C /* Build configuration list for PBXNativeTarget "HUOpenCV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				751EEE922108442A004B115C /* Debug */,
+				751EEE932108442A004B115C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7579B9CC2109658000A6102D /* Build configuration list for PBXNativeTarget "HUOpenCVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7579B9CA2109658000A6102D /* Debug */,
+				7579B9CB2109658000A6102D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 751EEE7721084428004B115C /* Project object */;
+}
