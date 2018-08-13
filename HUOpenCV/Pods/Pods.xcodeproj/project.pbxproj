@@ -24,6 +24,7 @@
 		A2BE2B4C675C1E0AA7F168AED63CC5C7 /* Pods-HUOpenCV-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HUOpenCV-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B2A9A6A187220BD3196460790F9BFF38 /* Pods-HUOpenCV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HUOpenCV.modulemap"; sourceTree = "<group>"; };
 		BCCF52B916828E64AABC31296D56E270 /* Pods_HUOpenCV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HUOpenCV.framework; path = "Pods-HUOpenCV.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C99D65E818282909945A7B67F1B204DD /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		E748F5C62FF61161DC2210DDFC753778 /* Pods-HUOpenCV-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HUOpenCV-resources.sh"; sourceTree = "<group>"; };
 		FF31072B84651D1975BF204ECBE75546 /* Pods-HUOpenCV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HUOpenCV-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,6 +47,14 @@
 				50C52B4A738949B4D7F47BB0E3080865 /* Pods-HUOpenCV */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4A77B0B9E2DA7C59F227CE1A17E78192 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C99D65E818282909945A7B67F1B204DD /* opencv2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		50C52B4A738949B4D7F47BB0E3080865 /* Pods-HUOpenCV */ = {
@@ -74,14 +83,32 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		6D76A84FA44FA422B31D3185B4166BFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6C1780F88BCD4979CB9FA9001B21D9A /* OpenCV */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6D76A84FA44FA422B31D3185B4166BFB /* Pods */,
 				BB4A7EF0441BFE8B7BDED9F84F141A50 /* Products */,
 				0B170C8F5AE396B6088184480AA92509 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		B6C1780F88BCD4979CB9FA9001B21D9A /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				4A77B0B9E2DA7C59F227CE1A17E78192 /* Frameworks */,
+			);
+			name = OpenCV;
+			path = OpenCV;
 			sourceTree = "<group>";
 		};
 		BB4A7EF0441BFE8B7BDED9F84F141A50 /* Products */ = {
