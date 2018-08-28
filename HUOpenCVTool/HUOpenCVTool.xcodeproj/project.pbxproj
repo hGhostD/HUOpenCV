@@ -104,6 +104,7 @@
 		75CBCC862134ECBC00E66513 /* libopencv_face.3.4.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CBCC2A2134ECBB00E66513 /* libopencv_face.3.4.2.dylib */; };
 		75CBCC872134ECBC00E66513 /* libopencv_line_descriptor.3.4.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CBCC2B2134ECBB00E66513 /* libopencv_line_descriptor.3.4.2.dylib */; };
 		75CBCC902134EDE500E66513 /* HUOpenCVManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75CBCC8E2134EDE500E66513 /* HUOpenCVManager.mm */; };
+		75CBCC982134F52F00E66513 /* HUTool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75CBCC962134F52F00E66513 /* HUTool.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -210,6 +211,8 @@
 		75CBCC8E2134EDE500E66513 /* HUOpenCVManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HUOpenCVManager.mm; sourceTree = "<group>"; };
 		75CBCC8F2134EDE500E66513 /* HUOpenCVManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUOpenCVManager.h; sourceTree = "<group>"; };
 		75CBCC912134F27800E66513 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		75CBCC962134F52F00E66513 /* HUTool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HUTool.cpp; sourceTree = "<group>"; };
+		75CBCC972134F52F00E66513 /* HUTool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HUTool.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -460,6 +463,8 @@
 			children = (
 				75CBCC8F2134EDE500E66513 /* HUOpenCVManager.h */,
 				75CBCC8E2134EDE500E66513 /* HUOpenCVManager.mm */,
+				75CBCC972134F52F00E66513 /* HUTool.hpp */,
+				75CBCC962134F52F00E66513 /* HUTool.cpp */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -537,6 +542,7 @@
 			files = (
 				75CBCC902134EDE500E66513 /* HUOpenCVManager.mm in Sources */,
 				75CBCBC12134EC3800E66513 /* ViewController.swift in Sources */,
+				75CBCC982134F52F00E66513 /* HUTool.cpp in Sources */,
 				75CBCBBF2134EC3800E66513 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

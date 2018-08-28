@@ -100,6 +100,7 @@
 		75CBCB952134E83200E66513 /* libopencv_bioinspired.3.4.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CBCB382134E83200E66513 /* libopencv_bioinspired.3.4.2.dylib */; };
 		75CBCB962134E83200E66513 /* libopencv_face.3.4.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CBCB392134E83200E66513 /* libopencv_face.3.4.2.dylib */; };
 		75CBCB972134E83200E66513 /* libopencv_line_descriptor.3.4.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CBCB3A2134E83200E66513 /* libopencv_line_descriptor.3.4.2.dylib */; };
+		75CBCCA321354E1300E66513 /* HUPlayAVITool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75CBCCA121354E1300E66513 /* HUPlayAVITool.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -210,6 +211,8 @@
 		75CBCB382134E83200E66513 /* libopencv_bioinspired.3.4.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_bioinspired.3.4.2.dylib; path = ../../../../../../usr/local/Cellar/opencv/3.4.2/lib/libopencv_bioinspired.3.4.2.dylib; sourceTree = "<group>"; };
 		75CBCB392134E83200E66513 /* libopencv_face.3.4.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_face.3.4.2.dylib; path = ../../../../../../usr/local/Cellar/opencv/3.4.2/lib/libopencv_face.3.4.2.dylib; sourceTree = "<group>"; };
 		75CBCB3A2134E83200E66513 /* libopencv_line_descriptor.3.4.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_line_descriptor.3.4.2.dylib; path = ../../../../../../usr/local/Cellar/opencv/3.4.2/lib/libopencv_line_descriptor.3.4.2.dylib; sourceTree = "<group>"; };
+		75CBCCA121354E1300E66513 /* HUPlayAVITool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HUPlayAVITool.cpp; sourceTree = "<group>"; };
+		75CBCCA221354E1300E66513 /* HUPlayAVITool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HUPlayAVITool.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,6 +339,8 @@
 			isa = PBXGroup;
 			children = (
 				75CBCAD62134E76800E66513 /* main.cpp */,
+				75CBCCA221354E1300E66513 /* HUPlayAVITool.hpp */,
+				75CBCCA121354E1300E66513 /* HUPlayAVITool.cpp */,
 			);
 			path = HUOpenCVOCTool;
 			sourceTree = "<group>";
@@ -497,6 +502,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75CBCAD72134E76800E66513 /* main.cpp in Sources */,
+				75CBCCA321354E1300E66513 /* HUPlayAVITool.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

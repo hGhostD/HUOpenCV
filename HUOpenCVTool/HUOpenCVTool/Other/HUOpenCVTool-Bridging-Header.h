@@ -3,3 +3,4 @@
 //
 
 #import "HUOpenCVManager.h"
+#import "HUTool.hpp"
