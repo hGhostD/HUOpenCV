@@ -13,7 +13,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(HUOpenCVManager.openCVVersionString())
+        print(HUOpenCVManager.objGetVideoWidth("~/Desktop/OpenCV_Source/pic1.png"))
         // Do any additional setup after loading the view.
     }
 

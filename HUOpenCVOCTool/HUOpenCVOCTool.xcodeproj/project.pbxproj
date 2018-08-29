@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75CAEA3B21363ECA001AC1B9 /* HUChangeImageTool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75CAEA3921363ECA001AC1B9 /* HUChangeImageTool.cpp */; };
 		75CBCAD72134E76800E66513 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75CBCAD62134E76800E66513 /* main.cpp */; };
 		75CBCB3B2134E83200E66513 /* libopencv_calib3d.3.4.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CBCADE2134E82F00E66513 /* libopencv_calib3d.3.4.2.dylib */; };
 		75CBCB3C2134E83200E66513 /* libopencv_dnn.3.4.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CBCADF2134E82F00E66513 /* libopencv_dnn.3.4.2.dylib */; };
@@ -116,6 +117,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		75CAEA3921363ECA001AC1B9 /* HUChangeImageTool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HUChangeImageTool.cpp; sourceTree = "<group>"; };
+		75CAEA3A21363ECA001AC1B9 /* HUChangeImageTool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HUChangeImageTool.hpp; sourceTree = "<group>"; };
 		75CBCAD32134E76800E66513 /* HUOpenCVOCTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HUOpenCVOCTool; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CBCAD62134E76800E66513 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		75CBCADE2134E82F00E66513 /* libopencv_calib3d.3.4.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_calib3d.3.4.2.dylib; path = ../../../../../../usr/local/Cellar/opencv/3.4.2/lib/libopencv_calib3d.3.4.2.dylib; sourceTree = "<group>"; };
@@ -341,6 +344,8 @@
 				75CBCAD62134E76800E66513 /* main.cpp */,
 				75CBCCA221354E1300E66513 /* HUPlayAVITool.hpp */,
 				75CBCCA121354E1300E66513 /* HUPlayAVITool.cpp */,
+				75CAEA3921363ECA001AC1B9 /* HUChangeImageTool.cpp */,
+				75CAEA3A21363ECA001AC1B9 /* HUChangeImageTool.hpp */,
 			);
 			path = HUOpenCVOCTool;
 			sourceTree = "<group>";
@@ -503,6 +508,7 @@
 			files = (
 				75CBCAD72134E76800E66513 /* main.cpp in Sources */,
 				75CBCCA321354E1300E66513 /* HUPlayAVITool.cpp in Sources */,
+				75CAEA3B21363ECA001AC1B9 /* HUChangeImageTool.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

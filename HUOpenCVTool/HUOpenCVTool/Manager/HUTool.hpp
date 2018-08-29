@@ -11,5 +11,5 @@
 
 #include <stdio.h>
 
-void showImage(const char* fileName);
+
 #endif /* HUTool_hpp */

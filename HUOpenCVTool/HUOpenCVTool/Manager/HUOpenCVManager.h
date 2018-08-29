@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface HUOpenCVManager : NSObject
 
 + (NSString *)openCVVersionString;
 
++ (NSInteger)objGetVideoWidth:(NSString *)fileName;
 @end
