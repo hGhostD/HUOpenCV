@@ -7,6 +7,7 @@
 //
 
 #include <highgui.h>
+#include <cv.h>
 #include "HUChangeImageTool.hpp"
 
 IplImage* doPyrDown(IplImage* in, int filter = CV_GAUSSIAN_5x5) {
@@ -37,4 +38,25 @@ void example(IplImage* image) {
     
     cvDestroyWindow("Ex4");
     cvDestroyWindow("Ex4-out");
+    
+}
+
+
+void roiAdd(const char* fileName, const char* roi_x, const char* roi_y, const char* roi_width, const char* roi_height, const char* roi_add) {
+    IplImage* src = cvLoadImage(fileName);
+    if(src != 0) {
+        int x = atoi(roi_x);
+        int y = atoi(roi_y);
+        int width = atoi(roi_width);
+        int heigth = atoi(roi_height);
+        int add = atoi(roi_add);
+        
+        cvSetImageROI(src, cvRect(x, y, width, heigth));
+        cvAddS(src, cvScalar(add), src);
+        cvResetImageROI(src);
+        cvNamedWindow("Roi_Add", 1);
+        cvShowImage("Roi_Add", src);
+        cvWaitKey();
+    }
+    
 }

@@ -13,4 +13,5 @@
 
 void example(IplImage* image);
 
+void roiAdd(const char* fileName, const char* roi_x, const char* roi_y, const char* roi_width, const char* roi_height, const char* roi_add);
 #endif /* HUChangeImageTool_hpp */

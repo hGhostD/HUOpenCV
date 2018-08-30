@@ -19,8 +19,8 @@ int main(int argc, const char * argv[]) {
     
 //    playAVI("~/Desktop/OpenCV_Source/tree.avi");
 //    playAVI("camera");
-    playAVI("~/Desktop/OpenCV_Source/tree.avi");
-
+//    playAVI("/Users/jw.hu/Desktop/OpenCV_Source/tree.avi");
+    roiAdd("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg", "20", "20", "100", "100", "150");
     return 0;
 }
 

@@ -344,8 +344,8 @@
 				75CBCAD62134E76800E66513 /* main.cpp */,
 				75CBCCA221354E1300E66513 /* HUPlayAVITool.hpp */,
 				75CBCCA121354E1300E66513 /* HUPlayAVITool.cpp */,
-				75CAEA3921363ECA001AC1B9 /* HUChangeImageTool.cpp */,
 				75CAEA3A21363ECA001AC1B9 /* HUChangeImageTool.hpp */,
+				75CAEA3921363ECA001AC1B9 /* HUChangeImageTool.cpp */,
 			);
 			path = HUOpenCVOCTool;
 			sourceTree = "<group>";
