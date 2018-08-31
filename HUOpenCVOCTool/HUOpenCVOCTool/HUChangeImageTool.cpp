@@ -58,5 +58,26 @@ void roiAdd(const char* fileName, const char* roi_x, const char* roi_y, const ch
         cvShowImage("Roi_Add", src);
         cvWaitKey();
     }
+}
+
+void alphablend(const char* fileName1, const char* fileName2, const char* alp_x, const char* alp_y, const char* alp_width, const char* alp_height, const char* alp, const char* alp_beta) {
+    IplImage* src1 = cvLoadImage(fileName1);
+    IplImage* src2 = cvLoadImage(fileName2);
+    if (src1 !=0 && src2 != 0) {
+        int x = atoi(alp_x);
+        int y = atoi(alp_y);
+        int width = atoi(alp_width);
+        int height = atoi(alp_height);
+        double alpha = (double)atof(alp);
+        double beta = (double)atof(alp_beta);
+        cvSetImageROI(src1, cvRect(x, y, width, height));
+        cvSetImageROI(src2, cvRect(0, 0, width, height));
+        cvAddWeighted(src1, alpha, src2, beta, 0.0, src1);
+        cvResetImageROI(src1);
+        cvNamedWindow("Alpha_blend", 1);
+        cvShowImage("Alpha_blend", src1);
+        cvWaitKey();
+    }
+    
     
 }
