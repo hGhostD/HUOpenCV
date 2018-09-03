@@ -13,9 +13,8 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        print(HUOpenCVManager.objGetVideoWidth("~/Desktop/OpenCV_Source/pic1.png"))
-        print(false && false || true)
-        // Do any additional setup after loading the view.
+        _ = dialogOKCancel(question: "确认?", text: "请选择:")
+
     }
 
     override var representedObject: Any? {
@@ -24,6 +23,14 @@ class ViewController: NSViewController {
         }
     }
 
-
+    func dialogOKCancel(question: String, text: String) -> Bool {
+        let myPopup: NSAlert = NSAlert()
+        myPopup.messageText = question
+        myPopup.informativeText = text
+        myPopup.alertStyle = .warning
+        myPopup.addButton(withTitle: "好的")
+        myPopup.addButton(withTitle: "取消")
+        return myPopup.runModal() == NSApplication.ModalResponse.alertFirstButtonReturn
+    }
 }
 

@@ -78,6 +78,5 @@ void alphablend(const char* fileName1, const char* fileName2, const char* alp_x,
         cvShowImage("Alpha_blend", src1);
         cvWaitKey();
     }
-    
-    
 }
+
