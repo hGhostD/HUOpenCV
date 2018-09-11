@@ -17,8 +17,6 @@ class ViewController: UIViewController {
     @IBAction func buttonClick() {
         let vc = UIAlertController(title: "Info", message: "\(HUOpenCVManager.openCVVersionString())", preferredStyle: .alert)
         let cancel = UIAlertAction(title: "OK", style: .cancel)
-        vc.addAction(cancel)
-        self.present(vc, animated: true)
     }
     
 }

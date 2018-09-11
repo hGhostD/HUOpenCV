@@ -6,73 +6,84 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		E08BFE539DC7AF7929B15A10091A37A0 /* OpenCV */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6739BA9D7B70258353CCFFC91BC35987 /* Build configuration list for PBXAggregateTarget "OpenCV" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = OpenCV;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		87712B30251F6586CFB77116276049EC /* Pods-HUOpenCV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF31072B84651D1975BF204ECBE75546 /* Pods-HUOpenCV-dummy.m */; };
-		EF7C86B6040174D0C9FE11316AFC80E5 /* Pods-HUOpenCV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2016C7B16D9A8A2FB272B5885BB20B95 /* Pods-HUOpenCV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFBE796EDE81537D6BB8C34079B27D95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		0F0154545708D2849866099E55ABDD6A /* Pods-HUOpenCV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B8F95CBD2B91A9B5249CDA187F51DCF /* Pods-HUOpenCV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71001D76FF0ACCC7FA708F5CD164EE24 /* Pods-HUOpenCV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4023777C0708FD7F29F28D4EF5D4134 /* Pods-HUOpenCV-dummy.m */; };
+		771FED4858D41B4296F782934602CD8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		99B572F7172EACEB1C931BC1E3A0FC7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E08BFE539DC7AF7929B15A10091A37A0;
+			remoteInfo = OpenCV;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		0471A9DF17AE30DBE760E3A7A6347A83 /* Pods-HUOpenCV-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HUOpenCV-acknowledgements.plist"; sourceTree = "<group>"; };
-		1901022AE96996C5E30346ECD358F15E /* Pods-HUOpenCV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HUOpenCV.release.xcconfig"; sourceTree = "<group>"; };
-		2016C7B16D9A8A2FB272B5885BB20B95 /* Pods-HUOpenCV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HUOpenCV-umbrella.h"; sourceTree = "<group>"; };
+		2DA509144A23F3955238383F608ADDA4 /* Pods-HUOpenCV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HUOpenCV.release.xcconfig"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5D8D7415052FDC7C0B8B4789023C3AB5 /* Pods-HUOpenCV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HUOpenCV.debug.xcconfig"; sourceTree = "<group>"; };
-		8E1DF8974C8178E89B8F46181EE85F25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BC7E5548093ACD6B230C63A1B9667F8 /* Pods-HUOpenCV-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HUOpenCV-acknowledgements.markdown"; sourceTree = "<group>"; };
+		66271B7AAF593FFAED2581865720AC4C /* Pods-HUOpenCV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HUOpenCV.debug.xcconfig"; sourceTree = "<group>"; };
+		8007E5F06E75CC1279E1FF75F414EEF6 /* Pods-HUOpenCV-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HUOpenCV-Info.plist"; sourceTree = "<group>"; };
+		8849495CF0AEC7DABC7D8DBA12C9C09B /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		884D55A051959D69834E31BBC4902712 /* Pods-HUOpenCV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HUOpenCV.modulemap"; sourceTree = "<group>"; };
+		8B8F95CBD2B91A9B5249CDA187F51DCF /* Pods-HUOpenCV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HUOpenCV-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		97366DF973330C19CDC2DD78BB509804 /* Pods-HUOpenCV-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HUOpenCV-frameworks.sh"; sourceTree = "<group>"; };
-		A2BE2B4C675C1E0AA7F168AED63CC5C7 /* Pods-HUOpenCV-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HUOpenCV-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B2A9A6A187220BD3196460790F9BFF38 /* Pods-HUOpenCV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HUOpenCV.modulemap"; sourceTree = "<group>"; };
+		A3E087B016676CBAD712426DBEDDD423 /* Pods-HUOpenCV-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HUOpenCV-acknowledgements.plist"; sourceTree = "<group>"; };
+		A4023777C0708FD7F29F28D4EF5D4134 /* Pods-HUOpenCV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HUOpenCV-dummy.m"; sourceTree = "<group>"; };
 		BCCF52B916828E64AABC31296D56E270 /* Pods_HUOpenCV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HUOpenCV.framework; path = "Pods-HUOpenCV.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C99D65E818282909945A7B67F1B204DD /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
-		E748F5C62FF61161DC2210DDFC753778 /* Pods-HUOpenCV-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HUOpenCV-resources.sh"; sourceTree = "<group>"; };
-		FF31072B84651D1975BF204ECBE75546 /* Pods-HUOpenCV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HUOpenCV-dummy.m"; sourceTree = "<group>"; };
+		FC73F96AC3C857CE9D2E867B6E8D8E2A /* OpenCV.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OpenCV.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9C0499006B3C7CB5EFFC02A10DEF6A39 /* Frameworks */ = {
+		CC97C3FA94EE92A1FC193D79215974EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFBE796EDE81537D6BB8C34079B27D95 /* Foundation.framework in Frameworks */,
+				771FED4858D41B4296F782934602CD8F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B170C8F5AE396B6088184480AA92509 /* Targets Support Files */ = {
+		0DB27EF2DE57BB3D219E19A80B60172E /* Pods-HUOpenCV */ = {
 			isa = PBXGroup;
 			children = (
-				50C52B4A738949B4D7F47BB0E3080865 /* Pods-HUOpenCV */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		4A77B0B9E2DA7C59F227CE1A17E78192 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C99D65E818282909945A7B67F1B204DD /* opencv2.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		50C52B4A738949B4D7F47BB0E3080865 /* Pods-HUOpenCV */ = {
-			isa = PBXGroup;
-			children = (
-				8E1DF8974C8178E89B8F46181EE85F25 /* Info.plist */,
-				B2A9A6A187220BD3196460790F9BFF38 /* Pods-HUOpenCV.modulemap */,
-				A2BE2B4C675C1E0AA7F168AED63CC5C7 /* Pods-HUOpenCV-acknowledgements.markdown */,
-				0471A9DF17AE30DBE760E3A7A6347A83 /* Pods-HUOpenCV-acknowledgements.plist */,
-				FF31072B84651D1975BF204ECBE75546 /* Pods-HUOpenCV-dummy.m */,
-				97366DF973330C19CDC2DD78BB509804 /* Pods-HUOpenCV-frameworks.sh */,
-				E748F5C62FF61161DC2210DDFC753778 /* Pods-HUOpenCV-resources.sh */,
-				2016C7B16D9A8A2FB272B5885BB20B95 /* Pods-HUOpenCV-umbrella.h */,
-				5D8D7415052FDC7C0B8B4789023C3AB5 /* Pods-HUOpenCV.debug.xcconfig */,
-				1901022AE96996C5E30346ECD358F15E /* Pods-HUOpenCV.release.xcconfig */,
+				884D55A051959D69834E31BBC4902712 /* Pods-HUOpenCV.modulemap */,
+				5BC7E5548093ACD6B230C63A1B9667F8 /* Pods-HUOpenCV-acknowledgements.markdown */,
+				A3E087B016676CBAD712426DBEDDD423 /* Pods-HUOpenCV-acknowledgements.plist */,
+				A4023777C0708FD7F29F28D4EF5D4134 /* Pods-HUOpenCV-dummy.m */,
+				8007E5F06E75CC1279E1FF75F414EEF6 /* Pods-HUOpenCV-Info.plist */,
+				8B8F95CBD2B91A9B5249CDA187F51DCF /* Pods-HUOpenCV-umbrella.h */,
+				66271B7AAF593FFAED2581865720AC4C /* Pods-HUOpenCV.debug.xcconfig */,
+				2DA509144A23F3955238383F608ADDA4 /* Pods-HUOpenCV.release.xcconfig */,
 			);
 			name = "Pods-HUOpenCV";
 			path = "Target Support Files/Pods-HUOpenCV";
+			sourceTree = "<group>";
+		};
+		586833E47146A6CF7D24F105BA25A6DB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DB27EF2DE57BB3D219E19A80B60172E /* Pods-HUOpenCV */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
@@ -83,32 +94,42 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6D76A84FA44FA422B31D3185B4166BFB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B6C1780F88BCD4979CB9FA9001B21D9A /* OpenCV */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				6D76A84FA44FA422B31D3185B4166BFB /* Pods */,
+				BB66D6D7CD3A9E2A9FDCAEA62E302608 /* Pods */,
 				BB4A7EF0441BFE8B7BDED9F84F141A50 /* Products */,
-				0B170C8F5AE396B6088184480AA92509 /* Targets Support Files */,
+				586833E47146A6CF7D24F105BA25A6DB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B6C1780F88BCD4979CB9FA9001B21D9A /* OpenCV */ = {
+		867B8289D425BC5E60C8E7D05D38E2F7 /* OpenCV */ = {
 			isa = PBXGroup;
 			children = (
-				4A77B0B9E2DA7C59F227CE1A17E78192 /* Frameworks */,
+				95427B17CFE13E5AE0DAC64F647C5D25 /* Frameworks */,
+				9AB636585C4BA14484FBEE2525DC7EBA /* Support Files */,
 			);
 			name = OpenCV;
 			path = OpenCV;
+			sourceTree = "<group>";
+		};
+		95427B17CFE13E5AE0DAC64F647C5D25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8849495CF0AEC7DABC7D8DBA12C9C09B /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AB636585C4BA14484FBEE2525DC7EBA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC73F96AC3C857CE9D2E867B6E8D8E2A /* OpenCV.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OpenCV";
 			sourceTree = "<group>";
 		};
 		BB4A7EF0441BFE8B7BDED9F84F141A50 /* Products */ = {
@@ -117,6 +138,14 @@
 				BCCF52B916828E64AABC31296D56E270 /* Pods_HUOpenCV.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BB66D6D7CD3A9E2A9FDCAEA62E302608 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				867B8289D425BC5E60C8E7D05D38E2F7 /* OpenCV */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -130,28 +159,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		BB6E869673E489DDFE13CC2E0DFBA219 /* Headers */ = {
+		ADE27D57E0D19F4604AC7E632464CF16 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF7C86B6040174D0C9FE11316AFC80E5 /* Pods-HUOpenCV-umbrella.h in Headers */,
+				0F0154545708D2849866099E55ABDD6A /* Pods-HUOpenCV-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		E397B3A4211CA9F9EE7E3281869019DE /* Pods-HUOpenCV */ = {
+		92D600F65F329B28397A0FF7DC11220B /* Pods-HUOpenCV */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A4316DCF271670201203221F32D1D84 /* Build configuration list for PBXNativeTarget "Pods-HUOpenCV" */;
+			buildConfigurationList = 7B6DEEABEA1BEFC13B8CA438B4C7B084 /* Build configuration list for PBXNativeTarget "Pods-HUOpenCV" */;
 			buildPhases = (
-				4DF5B31253D9297CBF775B9C23BD68D4 /* Sources */,
-				9C0499006B3C7CB5EFFC02A10DEF6A39 /* Frameworks */,
-				BB6E869673E489DDFE13CC2E0DFBA219 /* Headers */,
+				ADE27D57E0D19F4604AC7E632464CF16 /* Headers */,
+				3DB362F73C50BF30BCD45579AC469AEB /* Sources */,
+				CC97C3FA94EE92A1FC193D79215974EE /* Frameworks */,
+				E8441C74995165B3829AE34793BCCF73 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F329A8732DB08C35F69D281036617DDB /* PBXTargetDependency */,
 			);
 			name = "Pods-HUOpenCV";
 			productName = "Pods-HUOpenCV";
@@ -179,26 +210,46 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E397B3A4211CA9F9EE7E3281869019DE /* Pods-HUOpenCV */,
+				E08BFE539DC7AF7929B15A10091A37A0 /* OpenCV */,
+				92D600F65F329B28397A0FF7DC11220B /* Pods-HUOpenCV */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		E8441C74995165B3829AE34793BCCF73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		4DF5B31253D9297CBF775B9C23BD68D4 /* Sources */ = {
+		3DB362F73C50BF30BCD45579AC469AEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87712B30251F6586CFB77116276049EC /* Pods-HUOpenCV-dummy.m in Sources */,
+				71001D76FF0ACCC7FA708F5CD164EE24 /* Pods-HUOpenCV-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F329A8732DB08C35F69D281036617DDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OpenCV;
+			target = E08BFE539DC7AF7929B15A10091A37A0 /* OpenCV */;
+			targetProxy = 99B572F7172EACEB1C931BC1E3A0FC7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		37D1A07E538540B0063E13BCB1A19F69 /* Debug */ = {
+		3BBB02A7DD55961D1B238BEB662A306A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D8D7415052FDC7C0B8B4789023C3AB5 /* Pods-HUOpenCV.debug.xcconfig */;
+			baseConfigurationReference = 66271B7AAF593FFAED2581865720AC4C /* Pods-HUOpenCV.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -211,7 +262,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HUOpenCV/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-HUOpenCV/Pods-HUOpenCV-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -234,7 +285,62 @@
 			};
 			name = Debug;
 		};
-		553022A828EE1991F07D2D73F565AEF8 /* Debug */ = {
+		6A187E31D7D360F39042BF18D2E73BDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC73F96AC3C857CE9D2E867B6E8D8E2A /* OpenCV.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A78EC124F495DEC9EBCCBF01B0B6391D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DA509144A23F3955238383F608ADDA4 /* Pods-HUOpenCV.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HUOpenCV/Pods-HUOpenCV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HUOpenCV/Pods-HUOpenCV.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C92782E717C52E3633C9A5F211E7987A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -288,7 +394,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -297,7 +404,24 @@
 			};
 			name = Debug;
 		};
-		58CE816B060A41D32CEC095441D0E3E0 /* Release */ = {
+		E2657B56499EEE8CAD2DA1E07E939C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC73F96AC3C857CE9D2E867B6E8D8E2A /* OpenCV.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA8C7AF90938697605468604B2A17B9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -349,48 +473,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		7DFA17A59AB4D33A4D77B5D16B0A2DD2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1901022AE96996C5E30346ECD358F15E /* Pods-HUOpenCV.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HUOpenCV/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HUOpenCV/Pods-HUOpenCV.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -400,17 +486,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				553022A828EE1991F07D2D73F565AEF8 /* Debug */,
-				58CE816B060A41D32CEC095441D0E3E0 /* Release */,
+				C92782E717C52E3633C9A5F211E7987A /* Debug */,
+				EA8C7AF90938697605468604B2A17B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A4316DCF271670201203221F32D1D84 /* Build configuration list for PBXNativeTarget "Pods-HUOpenCV" */ = {
+		6739BA9D7B70258353CCFFC91BC35987 /* Build configuration list for PBXAggregateTarget "OpenCV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				37D1A07E538540B0063E13BCB1A19F69 /* Debug */,
-				7DFA17A59AB4D33A4D77B5D16B0A2DD2 /* Release */,
+				6A187E31D7D360F39042BF18D2E73BDD /* Debug */,
+				E2657B56499EEE8CAD2DA1E07E939C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B6DEEABEA1BEFC13B8CA438B4C7B084 /* Build configuration list for PBXNativeTarget "Pods-HUOpenCV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BBB02A7DD55961D1B238BEB662A306A /* Debug */,
+				A78EC124F495DEC9EBCCBF01B0B6391D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

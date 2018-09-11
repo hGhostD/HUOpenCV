@@ -11,6 +11,7 @@
 #include "HUPlayAVITool.hpp"
 #include "HUChangeImageTool.hpp"
 #include "HUThirdChapterAnswer.hpp"
+#include "HUHighGUI.hpp"
 
 using namespace std;
 using namespace cv;
@@ -23,7 +24,8 @@ int main(int argc, const char * argv[]) {
 //    playAVI("/Users/jw.hu/Desktop/OpenCV_Source/tree.avi");
 //    roiAdd("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg", "20", "20", "100", "100", "150");
 //    alphablend("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg", "/Users/jw.hu/Desktop/OpenCV_Source/butterfly.jpg", "20", "20", "100", "100", "0.5", "1");
-    eighth("/Users/jw.hu/Desktop/SourceTree/HUOpenCV/My_struct.txt");
+//    eighth("/Users/jw.hu/Desktop/SourceTree/HUOpenCV/My_struct.txt");
+    moveMousePainting();
     return 0;
 }
 
