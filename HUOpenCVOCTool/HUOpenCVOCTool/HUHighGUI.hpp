@@ -12,5 +12,6 @@
 #include <stdio.h>
 
 int moveMousePainting();
+void createTrackbar();
 
 #endif /* HUHighGUI_hpp */

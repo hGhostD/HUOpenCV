@@ -72,3 +72,21 @@ void my_mouse_callback(int event, int x, int y, int flags, void *param) {
             break;
     }
 }
+
+int g_switch_value = 0;
+void switch_callback(int position) {
+    if (position == 0) {
+//        switch_off_function();
+        printf("off");
+    }else {
+//        switch_on_function();
+        printf("on");
+    }
+}
+//创建滚动条
+void createTrackbar() {
+    cvNamedWindow("Demo", 1);
+    cvCreateTrackbar("Switch", "Demo", &g_switch_value, 1, switch_callback);
+
+    while (1) { if (cvWaitKey(15) == 27) { break; } }
+}
