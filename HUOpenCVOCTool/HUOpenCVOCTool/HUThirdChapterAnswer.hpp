@@ -14,12 +14,12 @@
 
 #include <stdio.h>
 
-void first();
-void second();
-void third(bool isFillColor);
-void fifth();
-void sixth(const char* fileName);
-void seventh(const char* fileName);
-void eighth(const char* fileName);
+void third_first();
+void third_second();
+void third_third(bool isFillColor);
+void third_fifth();
+void third_sixth(const char* fileName);
+void third_seventh(const char* fileName);
+void third_eighth(const char* fileName);
 
 #endif /* HUThirdChapterAnswer_hpp */

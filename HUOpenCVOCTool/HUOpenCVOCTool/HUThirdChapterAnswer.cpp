@@ -21,7 +21,7 @@ void show(const char* fileName, const CvArr *image) {
  书后第三章习题
  */
 
-void first() {
+void third_first() {
     float pi = -3.1415926;
     //a 选取一个负的浮点数, 取它的绝对值,四舍五入后,取它的极值
     float abs_pi = CV_IABS(pi);
@@ -42,7 +42,7 @@ void first() {
 int width = 1000;
 int height = 1000;
 // 创造一个三通道二位矩阵,字节类型,大小为 100*100, 并设置所有数值为0
-void second() {
+void third_second() {
     CvMat* mat = cvCreateMat(width, height, CV_8UC3);
     cvSetZero(mat);
 
@@ -54,7 +54,7 @@ void second() {
 }
 // 3.通过 cvPtr2D 将指针指向中间的通道("绿色").以(20,5)与(40,20)为定点画一个绿色长方形.
 // 4.画一个绿色平面
-void third(bool isFillColor) {
+void third_third(bool isFillColor) {
     CvMat* mat = cvCreateMat(100, 100, CV_8UC3);
     cvSetZero(mat);
     if (!isFillColor) {
@@ -79,7 +79,7 @@ void third(bool isFillColor) {
     show("3", mat);
 }
 // 使用 ROI 和 cvSet() 建立一个增长如金字塔状的数组
-void fifth() {
+void third_fifth() {
     IplImage* image = cvCreateImage(cvSize(210, 210), 8, 1);
     cvSetZero(image);
     
@@ -94,7 +94,7 @@ void fifth() {
     show("4", image);
 }
 // 为一个图像创建多个图像头。
-void sixth(const char* fileName) {
+void third_sixth(const char* fileName) {
     IplImage* image = cvLoadImage(fileName);
     IplImage* header1 = cvCreateImageHeader(cvSize(20, 30), image->depth, image->nChannels);
     IplImage* header2 = cvCreateImageHeader(cvSize(20, 30), image->depth, image->nChannels);
@@ -114,7 +114,7 @@ void sixth(const char* fileName) {
     cvReleaseImageHeader(&header2);
 }
 // 使用 cvCmp() 创建一个掩码。加载一个真实的图形。使用 cvSplit() 将图像分割成红，绿，蓝三个单通道图像。
-void seventh(const char* fileName) {
+void third_seventh(const char* fileName) {
     IplImage* image = cvLoadImage(fileName);
     CvSize size = cvSize(image->width, image->height);
     IplImage* image_b = cvCreateImage(size, image->depth, 1);
@@ -210,7 +210,7 @@ bool check(my_struct* msValue1, my_struct* msValue2) {
         return false;
 }
 
-void eighth(const char* fileName) {
+void third_eighth(const char* fileName) {
     
     // 写入部分
     my_struct msArray[10];

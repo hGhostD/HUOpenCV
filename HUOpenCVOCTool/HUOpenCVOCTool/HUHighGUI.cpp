@@ -90,3 +90,4 @@ void createTrackbar() {
 
     while (1) { if (cvWaitKey(15) == 27) { break; } }
 }
+

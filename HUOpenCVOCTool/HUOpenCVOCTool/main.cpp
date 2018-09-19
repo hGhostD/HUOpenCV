@@ -12,6 +12,7 @@
 #include "HUChangeImageTool.hpp"
 #include "HUThirdChapterAnswer.hpp"
 #include "HUHighGUI.hpp"
+#include "HUFourthChapterAnswer.hpp"
 
 using namespace std;
 using namespace cv;
@@ -26,7 +27,8 @@ int main(int argc, const char * argv[]) {
 //    alphablend("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg", "/Users/jw.hu/Desktop/OpenCV_Source/butterfly.jpg", "20", "20", "100", "100", "0.5", "1");
 //    eighth("/Users/jw.hu/Desktop/SourceTree/HUOpenCV/My_struct.txt");
 //    moveMousePainting();
-    createTrackbar();
+//    createTrackbar();
+    fourth_first();
     return 0;
 }
 
