@@ -12,5 +12,6 @@
 #include <stdio.h>
 
 void playAVI(const char* name);
+void writeAVI();
 
 #endif /* HUPlayAVITool_hpp */

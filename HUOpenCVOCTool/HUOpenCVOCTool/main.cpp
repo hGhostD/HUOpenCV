@@ -13,22 +13,15 @@
 #include "HUThirdChapterAnswer.hpp"
 #include "HUHighGUI.hpp"
 #include "HUFourthChapterAnswer.hpp"
+#include "HUFifthChapterLearning.hpp"
 
 using namespace std;
 using namespace cv;
 
 
 int main(int argc, const char * argv[]) {
-    
-//    playAVI("~/Desktop/OpenCV_Source/tree.avi");
-//    playAVI("camera");
-//    playAVI("/Users/jw.hu/Desktop/OpenCV_Source/tree.avi");
-//    roiAdd("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg", "20", "20", "100", "100", "150");
-//    alphablend("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg", "/Users/jw.hu/Desktop/OpenCV_Source/butterfly.jpg", "20", "20", "100", "100", "0.5", "1");
-//    eighth("/Users/jw.hu/Desktop/SourceTree/HUOpenCV/My_struct.txt");
-//    moveMousePainting();
-//    createTrackbar();
-    fourth_first();
+   
+    fourth_second("/Users/mac/Desktop/OpenCV_Source/ml.png");
     return 0;
 }
 

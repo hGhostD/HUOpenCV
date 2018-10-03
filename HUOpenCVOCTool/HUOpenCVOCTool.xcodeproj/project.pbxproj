@@ -104,17 +104,19 @@
 		75CBCB962134E83200E66513 /* libopencv_face.3.4.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CBCB392134E83200E66513 /* libopencv_face.3.4.2.dylib */; };
 		75CBCB972134E83200E66513 /* libopencv_line_descriptor.3.4.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CBCB3A2134E83200E66513 /* libopencv_line_descriptor.3.4.2.dylib */; };
 		75CBCCA321354E1300E66513 /* HUPlayAVITool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75CBCCA121354E1300E66513 /* HUPlayAVITool.cpp */; };
+		85294886216485690062F080 /* HUFifthChapterLearning.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85294884216485690062F080 /* HUFifthChapterLearning.cpp */; };
 		85DECA3C215296BE00EBEBED /* HUFourthChapterAnswer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85DECA3A215296BE00EBEBED /* HUFourthChapterAnswer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		75CBCAD12134E76800E66513 /* CopyFiles */ = {
+		75CBCAD12134E76800E66513 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -223,6 +225,8 @@
 		75CBCB3A2134E83200E66513 /* libopencv_line_descriptor.3.4.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_line_descriptor.3.4.2.dylib; path = ../../../../../../usr/local/Cellar/opencv/3.4.2/lib/libopencv_line_descriptor.3.4.2.dylib; sourceTree = "<group>"; };
 		75CBCCA121354E1300E66513 /* HUPlayAVITool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HUPlayAVITool.cpp; sourceTree = "<group>"; };
 		75CBCCA221354E1300E66513 /* HUPlayAVITool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HUPlayAVITool.hpp; sourceTree = "<group>"; };
+		85294884216485690062F080 /* HUFifthChapterLearning.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HUFifthChapterLearning.cpp; sourceTree = "<group>"; };
+		85294885216485690062F080 /* HUFifthChapterLearning.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HUFifthChapterLearning.hpp; sourceTree = "<group>"; };
 		85DECA3A215296BE00EBEBED /* HUFourthChapterAnswer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HUFourthChapterAnswer.cpp; sourceTree = "<group>"; };
 		85DECA3B215296BE00EBEBED /* HUFourthChapterAnswer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HUFourthChapterAnswer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -361,6 +365,8 @@
 				757B5FF72145FEB8008CF73F /* HUHighGUI.cpp */,
 				85DECA3B215296BE00EBEBED /* HUFourthChapterAnswer.hpp */,
 				85DECA3A215296BE00EBEBED /* HUFourthChapterAnswer.cpp */,
+				85294885216485690062F080 /* HUFifthChapterLearning.hpp */,
+				85294884216485690062F080 /* HUFifthChapterLearning.cpp */,
 			);
 			path = HUOpenCVOCTool;
 			sourceTree = "<group>";
@@ -474,7 +480,7 @@
 			buildPhases = (
 				75CBCACF2134E76800E66513 /* Sources */,
 				75CBCAD02134E76800E66513 /* Frameworks */,
-				75CBCAD12134E76800E66513 /* CopyFiles */,
+				75CBCAD12134E76800E66513 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -524,6 +530,7 @@
 				85DECA3C215296BE00EBEBED /* HUFourthChapterAnswer.cpp in Sources */,
 				757B5FF92145FEB8008CF73F /* HUHighGUI.cpp in Sources */,
 				7554BA63213CE388001F3CA6 /* HUThirdChapterAnswer.cpp in Sources */,
+				85294886216485690062F080 /* HUFifthChapterLearning.cpp in Sources */,
 				75CBCAD72134E76800E66513 /* main.cpp in Sources */,
 				75CBCCA321354E1300E66513 /* HUPlayAVITool.cpp in Sources */,
 				75CAEA3B21363ECA001AC1B9 /* HUChangeImageTool.cpp in Sources */,
@@ -585,6 +592,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "/usr/local/Cellar/opencv/3.4.2/include/**";
+				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
 				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/opencv/3.4.2/lib/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -639,6 +647,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "/usr/local/Cellar/opencv/3.4.2/include/**";
+				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
 				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/opencv/3.4.2/lib/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -651,10 +660,12 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4EAX79Y925;
+				INFOPLIST_FILE = /Users/mac/Desktop/SourceTree/HUOpenCV/HUOpenCVOCTool/HUOpenCVOCTool/Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/opencv/3.4.2/lib,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.opencv.hu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -664,10 +675,12 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4EAX79Y925;
+				INFOPLIST_FILE = /Users/mac/Desktop/SourceTree/HUOpenCV/HUOpenCVOCTool/HUOpenCVOCTool/Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/opencv/3.4.2/lib,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.opencv.hu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
