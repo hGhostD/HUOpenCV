@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		752C477122719E7C00984297 /* HUFindSquares.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 752C476F22719E7C00984297 /* HUFindSquares.cpp */; };
 		7554BA63213CE388001F3CA6 /* HUThirdChapterAnswer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7554BA61213CE388001F3CA6 /* HUThirdChapterAnswer.cpp */; };
 		757B5FF92145FEB8008CF73F /* HUHighGUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 757B5FF72145FEB8008CF73F /* HUHighGUI.cpp */; };
+		75A376902281811600371417 /* S2iImageTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75A3768E2281811600371417 /* S2iImageTest.cpp */; };
 		75CAEA3B21363ECA001AC1B9 /* HUChangeImageTool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75CAEA3921363ECA001AC1B9 /* HUChangeImageTool.cpp */; };
 		75CBCAD72134E76800E66513 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75CBCAD62134E76800E66513 /* main.cpp */; };
 		75CBCB3B2134E83200E66513 /* libopencv_calib3d.3.4.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CBCADE2134E82F00E66513 /* libopencv_calib3d.3.4.2.dylib */; };
@@ -122,10 +124,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		752C476F22719E7C00984297 /* HUFindSquares.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HUFindSquares.cpp; sourceTree = "<group>"; };
+		752C477022719E7C00984297 /* HUFindSquares.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HUFindSquares.hpp; sourceTree = "<group>"; };
 		7554BA61213CE388001F3CA6 /* HUThirdChapterAnswer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HUThirdChapterAnswer.cpp; sourceTree = "<group>"; };
 		7554BA62213CE388001F3CA6 /* HUThirdChapterAnswer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HUThirdChapterAnswer.hpp; sourceTree = "<group>"; };
 		757B5FF72145FEB8008CF73F /* HUHighGUI.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HUHighGUI.cpp; sourceTree = "<group>"; };
 		757B5FF82145FEB8008CF73F /* HUHighGUI.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HUHighGUI.hpp; sourceTree = "<group>"; };
+		75A3768E2281811600371417 /* S2iImageTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = S2iImageTest.cpp; sourceTree = "<group>"; };
+		75A3768F2281811600371417 /* S2iImageTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = S2iImageTest.hpp; sourceTree = "<group>"; };
 		75CAEA3921363ECA001AC1B9 /* HUChangeImageTool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HUChangeImageTool.cpp; sourceTree = "<group>"; };
 		75CAEA3A21363ECA001AC1B9 /* HUChangeImageTool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HUChangeImageTool.hpp; sourceTree = "<group>"; };
 		75CBCAD32134E76800E66513 /* HUOpenCVOCTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HUOpenCVOCTool; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -367,6 +373,10 @@
 				85DECA3A215296BE00EBEBED /* HUFourthChapterAnswer.cpp */,
 				85294885216485690062F080 /* HUFifthChapterLearning.hpp */,
 				85294884216485690062F080 /* HUFifthChapterLearning.cpp */,
+				752C477022719E7C00984297 /* HUFindSquares.hpp */,
+				752C476F22719E7C00984297 /* HUFindSquares.cpp */,
+				75A3768E2281811600371417 /* S2iImageTest.cpp */,
+				75A3768F2281811600371417 /* S2iImageTest.hpp */,
 			);
 			path = HUOpenCVOCTool;
 			sourceTree = "<group>";
@@ -531,6 +541,8 @@
 				757B5FF92145FEB8008CF73F /* HUHighGUI.cpp in Sources */,
 				7554BA63213CE388001F3CA6 /* HUThirdChapterAnswer.cpp in Sources */,
 				85294886216485690062F080 /* HUFifthChapterLearning.cpp in Sources */,
+				75A376902281811600371417 /* S2iImageTest.cpp in Sources */,
+				752C477122719E7C00984297 /* HUFindSquares.cpp in Sources */,
 				75CBCAD72134E76800E66513 /* main.cpp in Sources */,
 				75CBCCA321354E1300E66513 /* HUPlayAVITool.cpp in Sources */,
 				75CAEA3B21363ECA001AC1B9 /* HUChangeImageTool.cpp in Sources */,
@@ -659,7 +671,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4EAX79Y925;
+				DEVELOPMENT_TEAM = 7SKZP3W4L7;
 				INFOPLIST_FILE = /Users/mac/Desktop/SourceTree/HUOpenCV/HUOpenCVOCTool/HUOpenCVOCTool/Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -674,7 +686,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4EAX79Y925;
+				DEVELOPMENT_TEAM = 7SKZP3W4L7;
 				INFOPLIST_FILE = /Users/mac/Desktop/SourceTree/HUOpenCV/HUOpenCVOCTool/HUOpenCVOCTool/Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

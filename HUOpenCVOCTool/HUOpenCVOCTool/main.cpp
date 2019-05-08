@@ -14,6 +14,7 @@
 #include "HUHighGUI.hpp"
 #include "HUFourthChapterAnswer.hpp"
 #include "HUFifthChapterLearning.hpp"
+#include "HUFindSquares.hpp"
 
 using namespace std;
 using namespace cv;
@@ -21,7 +22,8 @@ using namespace cv;
 
 int main(int argc, const char * argv[]) {
    
-    fourth_second("/Users/mac/Desktop/OpenCV_Source/ml.png");
+//    fourth_second("/Users/mac/Desktop/OpenCV_Source/ml.png");
+    findS();
     return 0;
 }
 
