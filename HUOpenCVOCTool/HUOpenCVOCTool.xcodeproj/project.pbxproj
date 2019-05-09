@@ -340,6 +340,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75921C872284067C00E97002 /* 第四章 */ = {
+			isa = PBXGroup;
+			children = (
+				757B5FF82145FEB8008CF73F /* HUHighGUI.hpp */,
+				757B5FF72145FEB8008CF73F /* HUHighGUI.cpp */,
+				85DECA3B215296BE00EBEBED /* HUFourthChapterAnswer.hpp */,
+				85DECA3A215296BE00EBEBED /* HUFourthChapterAnswer.cpp */,
+			);
+			name = "第四章";
+			sourceTree = "<group>";
+		};
+		75921C882284069200E97002 /* 第三章 */ = {
+			isa = PBXGroup;
+			children = (
+				75CAEA3A21363ECA001AC1B9 /* HUChangeImageTool.hpp */,
+				75CAEA3921363ECA001AC1B9 /* HUChangeImageTool.cpp */,
+				7554BA62213CE388001F3CA6 /* HUThirdChapterAnswer.hpp */,
+				7554BA61213CE388001F3CA6 /* HUThirdChapterAnswer.cpp */,
+			);
+			name = "第三章";
+			sourceTree = "<group>";
+		};
+		75921C892284069E00E97002 /* 识别正方形 */ = {
+			isa = PBXGroup;
+			children = (
+				752C477022719E7C00984297 /* HUFindSquares.hpp */,
+				752C476F22719E7C00984297 /* HUFindSquares.cpp */,
+				75A3768E2281811600371417 /* S2iImageTest.cpp */,
+				75A3768F2281811600371417 /* S2iImageTest.hpp */,
+			);
+			name = "识别正方形";
+			sourceTree = "<group>";
+		};
+		75921C8A228406A900E97002 /* 第五章 */ = {
+			isa = PBXGroup;
+			children = (
+				85294885216485690062F080 /* HUFifthChapterLearning.hpp */,
+				85294884216485690062F080 /* HUFifthChapterLearning.cpp */,
+			);
+			name = "第五章";
+			sourceTree = "<group>";
+		};
 		75CBCACA2134E76700E66513 = {
 			isa = PBXGroup;
 			children = (
@@ -363,20 +405,10 @@
 				75CBCAD62134E76800E66513 /* main.cpp */,
 				75CBCCA221354E1300E66513 /* HUPlayAVITool.hpp */,
 				75CBCCA121354E1300E66513 /* HUPlayAVITool.cpp */,
-				75CAEA3A21363ECA001AC1B9 /* HUChangeImageTool.hpp */,
-				75CAEA3921363ECA001AC1B9 /* HUChangeImageTool.cpp */,
-				7554BA62213CE388001F3CA6 /* HUThirdChapterAnswer.hpp */,
-				7554BA61213CE388001F3CA6 /* HUThirdChapterAnswer.cpp */,
-				757B5FF82145FEB8008CF73F /* HUHighGUI.hpp */,
-				757B5FF72145FEB8008CF73F /* HUHighGUI.cpp */,
-				85DECA3B215296BE00EBEBED /* HUFourthChapterAnswer.hpp */,
-				85DECA3A215296BE00EBEBED /* HUFourthChapterAnswer.cpp */,
-				85294885216485690062F080 /* HUFifthChapterLearning.hpp */,
-				85294884216485690062F080 /* HUFifthChapterLearning.cpp */,
-				752C477022719E7C00984297 /* HUFindSquares.hpp */,
-				752C476F22719E7C00984297 /* HUFindSquares.cpp */,
-				75A3768E2281811600371417 /* S2iImageTest.cpp */,
-				75A3768F2281811600371417 /* S2iImageTest.hpp */,
+				75921C882284069200E97002 /* 第三章 */,
+				75921C872284067C00E97002 /* 第四章 */,
+				75921C8A228406A900E97002 /* 第五章 */,
+				75921C892284069E00E97002 /* 识别正方形 */,
 			);
 			path = HUOpenCVOCTool;
 			sourceTree = "<group>";
