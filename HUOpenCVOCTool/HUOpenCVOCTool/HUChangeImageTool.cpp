@@ -80,3 +80,14 @@ void alphablend(const char* fileName1, const char* fileName2, const char* alp_x,
     }
 }
 
+void drawLine() {
+    cvNamedWindow("Line");
+    CvMat* img = cvCreateMat(1000, 1000, CV_8U);
+    cvSetZero(img);
+    cvLine(img, cvPoint(10, 10), cvPoint(1000, 1000), cvScalar(255));
+    
+    cvShowImage("Line", img);
+    while (1) { if (cvWaitKey(100) == 27) { break; } }
+    cvDestroyAllWindows();
+    
+}

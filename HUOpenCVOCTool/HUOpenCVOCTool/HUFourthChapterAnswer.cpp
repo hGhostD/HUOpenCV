@@ -12,6 +12,7 @@
 #include <cv.h>
 /*
  书后第四章习题
+ https://blog.csdn.net/luoshixian099/article/details/41422099
  */
 
 void fourth_first() {
@@ -26,7 +27,7 @@ void fourth_first() {
     // 转成灰度图片
     cvConvertImage(img, grey);
     // Canndy 边缘检测
-    cvCanny(grey, canny, 100, 200);
+    cvCanny(grey, canny, 30, 100);
     // 显示图片
     cvNamedWindow("Ex4-1 A");
     cvNamedWindow("Ex4-1 B");
@@ -40,7 +41,42 @@ void fourth_first() {
     cvMoveWindow("Ex4-1 B", img->width, 0);
     cvMoveWindow("Ex4-1 C", img->width * 2, 0);
 
+    while (1) { if (cvWaitKey(100) == 27) { break; } }
+    cvDestroyAllWindows();
+}
+
+void fourth_first_b() {
+    IplImage* img = cvLoadImage("/Users/jw.hu/Desktop/OpenCV_Source/smarties.png");
+    IplImage* gray = cvCreateImage(cvGetSize(img), img->depth, 1);
+    IplImage* canny = cvCloneImage(gray);
+    // 转成灰度图片
+    cvConvertImage(img, gray);
+    // Canndy 边缘检测
+    cvCanny(gray, canny, 30, 100);
     
+    int width = img->width;
+    int height = img->height;
+    // 创建画布图片和图片头
+    IplImage *unit = cvCreateImage(cvSize(width * 3, height), img->depth, 3);
+    IplImage *imag_header = cvCreateImageHeader(cvSize(width, height), img->depth, 3);
+    imag_header->widthStep = unit->widthStep;
+    imag_header->imageData = unit->imageData;
+    // 将第一张图片复制到 unit 上
+    cvCopy(img, imag_header);
+    // 处理灰色图片
+    IplImage *grey_imag = cvCreateImage(cvSize(width, height), img->depth, 3);
+    cvConvertImage(gray, grey_imag, CV_GRAY2BGR);
+    imag_header->imageData = unit->imageData + img->widthStep;
+    cvCopy(grey_imag, imag_header);
+    // 处理边缘图片
+    IplImage *canny_imag = cvCreateImage(cvSize(width, height), img->depth, 3);
+    cvConvertImage(canny, canny_imag, CV_GRAY2BGR);
+    imag_header->imageData = unit->imageData + img->widthStep * 2;
+    cvCopy(canny_imag, imag_header);
+    
+    // 显示图片
+    cvNamedWindow("Ex4-1 b");
+    cvShowImage("Ex4-1 b", unit);
     while (1) { if (cvWaitKey(100) == 27) { break; } }
     cvDestroyAllWindows();
 }

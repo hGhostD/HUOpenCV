@@ -16,4 +16,5 @@ void example(IplImage* image);
 void roiAdd(const char* fileName, const char* roi_x, const char* roi_y, const char* roi_width, const char* roi_height, const char* roi_add);
 
 void alphablend(const char* fileName1, const char* fileName2, const char* alp_x, const char* alp_y, const char* alp_width, const char* alp_height, const char* alp, const char* alp_beta);
+void drawLine();
 #endif /* HUChangeImageTool_hpp */

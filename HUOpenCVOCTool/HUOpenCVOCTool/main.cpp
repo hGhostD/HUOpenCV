@@ -19,12 +19,21 @@
 using namespace std;
 using namespace cv;
 
+void callback(int event, int x, int y, int flags, void* param) {
+    if (event == CV_EVENT_LBUTTONDOWN) {
+        // 获取图片坐标点
+        cout << x << ":" << y << endl;
+    }
+}
 
 int main(int argc, const char * argv[]) {
    
-//    fourth_second("/Users/mac/Desktop/OpenCV_Source/ml.png");
-    findS();
+//    drawLine();
+    fourth_first_b();
+
     return 0;
 }
+
+
 
 

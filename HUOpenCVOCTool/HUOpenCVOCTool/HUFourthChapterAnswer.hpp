@@ -12,6 +12,7 @@
 #include <stdio.h>
 
 void fourth_first();
+void fourth_first_b();
 void fourth_second(const char* fileName);
 
 #endif /* HUFourthChapterAnswer_hpp */
