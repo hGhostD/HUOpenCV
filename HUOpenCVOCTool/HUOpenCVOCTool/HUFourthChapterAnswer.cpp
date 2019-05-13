@@ -74,6 +74,14 @@ void fourth_first_b() {
     imag_header->imageData = unit->imageData + img->widthStep * 2;
     cvCopy(canny_imag, imag_header);
     
+    // 添加文字
+    CvFont m_font;
+    cvInitFont(&m_font, CV_FONT_HERSHEY_PLAIN, 1.0, 1.0);
+    cvPutText(unit, "Origin", cvPoint(0, 10), &m_font, cvScalar(255,255,0));
+    cvPutText(unit, "中文", cvPoint(200, 200), &m_font, cvScalar(255,255,0));
+    cvPutText(unit, "Center", cvPoint(width / 2, height / 2), &m_font, cvScalar(255,255,0));
+    
+    
     // 显示图片
     cvNamedWindow("Ex4-1 b");
     cvShowImage("Ex4-1 b", unit);
@@ -86,8 +94,7 @@ void mouseCallBack( int event, int x, int y, int flags, void* param) {
     IplImage* img0;
     img0 = (IplImage *)param;
     switch (event) {
-        case CV_EVENT_LBUTTONUP:
-            
+        case CV_EVENT_LBUTTONDOWN:
             //
             showpiexl(img0, x, y);
             break;
@@ -98,9 +105,8 @@ void mouseCallBack( int event, int x, int y, int flags, void* param) {
 }
 
 
-void fourth_second(const char* fileName) {
-    
-    IplImage* image = cvLoadImage(fileName);
+void fourth_second() {
+    IplImage* image = cvLoadImage("/Users/jw.hu/Desktop/OpenCV_Source/smarties.png");
     
     cvNamedWindow("EX4-2");
     cvShowImage("EX4-2", image);
@@ -112,10 +118,12 @@ void fourth_second(const char* fileName) {
 }
 
 void showpiexl(IplImage* img, int x, int y) {
-    char label[20];
-    sprintf(label, "(%d, %d, %d)", CV_IMAGE_ELEM(img, uchar, y, 3*x),
-            CV_IMAGE_ELEM(img, uchar, y, 3*x+1),CV_IMAGE_ELEM(img, uchar, y, 3*x+2));
+    CvScalar rgb = cvGet2D(img, y, x);
+    char label[40];
+    sprintf(label, "(%f, %f, %f)", rgb.val[2], rgb.val[1], rgb.val[0]);
+    
     CvFont font;
     cvInitFont(&font, CV_FONT_VECTOR0, 1, 1, 0, 1, 8);
+    cvPutText(img, label, cvPoint(x, y), &font,cvGet2D(img, y, x));
     cvShowImage("EX4-2", img);
 }

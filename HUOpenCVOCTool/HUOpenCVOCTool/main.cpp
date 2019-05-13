@@ -29,8 +29,8 @@ void callback(int event, int x, int y, int flags, void* param) {
 int main(int argc, const char * argv[]) {
    
 //    drawLine();
-    fourth_first_b();
-
+//    fourth_first_b();
+    fourth_second();
     return 0;
 }
 
