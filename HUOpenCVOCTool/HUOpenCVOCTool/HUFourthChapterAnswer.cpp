@@ -160,7 +160,7 @@ void fourth_third() {
 
     while (1) {
         if (cvWaitKey(100) == 27) { break; }
-//        cvShowImage("4-3", img);
+        cvShowImage("4-3", img);
     }
     cvDestroyAllWindows();
 }
