@@ -14,5 +14,6 @@
 void fourth_first();
 void fourth_first_b();
 void fourth_second();
+void fourth_third();
 
 #endif /* HUFourthChapterAnswer_hpp */

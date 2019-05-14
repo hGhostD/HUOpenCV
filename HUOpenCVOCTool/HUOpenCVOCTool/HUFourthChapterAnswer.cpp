@@ -127,3 +127,40 @@ void showpiexl(IplImage* img, int x, int y) {
     cvPutText(img, label, cvPoint(x, y), &font,cvGet2D(img, y, x));
     cvShowImage("EX4-2", img);
 }
+
+CvPoint p1;
+CvPoint p2;
+void drawRect(IplImage *img) {
+    CvPoint pt1 = cvPoint(MIN(p1.x, p1.x), MIN(p1.y, p1.y));
+    CvPoint pt2 = cvPoint(MIN(p2.x, p2.x), MIN(p2.y, p2.y));
+    cvRectangle(img, pt1, pt2, cvScalar(255, 176, 0));
+}
+void mouse4_3(int event, int x, int y, int flags, void* param) {
+    IplImage* img = (IplImage *)param;
+    switch (event) {
+        case CV_EVENT_LBUTTONDOWN:
+            p1 = cvPoint(x, y);
+//            cvRectangleR(img, cvRect(0, 0, 100, 100), CvScalar(255,176,0));
+            break;
+        case CV_EVENT_LBUTTONUP:
+            p2 = cvPoint(x, y);
+            drawRect(img);
+            break;
+        default:
+            break;
+    }
+}
+
+
+void fourth_third() {
+    IplImage* img = cvLoadImage("/Users/jw.hu/Desktop/OpenCV_Source/orange.jpg");
+    cvNamedWindow("4-3");
+    cvShowImage("4-3", img);
+    cvSetMouseCallback("4-3", mouse4_3, (void *)img);
+
+    while (1) {
+        if (cvWaitKey(100) == 27) { break; }
+//        cvShowImage("4-3", img);
+    }
+    cvDestroyAllWindows();
+}
