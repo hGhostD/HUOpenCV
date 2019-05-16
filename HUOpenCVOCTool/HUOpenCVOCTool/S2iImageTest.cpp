@@ -8,11 +8,6 @@
 
 #include "S2iImageTest.hpp"
 
-#include "opencv2/core.hpp"
-#include "opencv2/imgproc.hpp"
-#include "opencv2/imgcodecs.hpp"
-#include "opencv2/highgui.hpp"
-
 #include <iostream>
 
 using namespace std;
@@ -95,4 +90,147 @@ Mat findSquares(Mat image, vector<vector<Point>> &squares) {
         }
     }
     return result;
+}
+
+void light(IplImage *image) {
+    IplImage* gray = cvCreateImage(cvGetSize(image), image->depth, 1);
+    cvCvtColor(image, gray, CV_BGR2GRAY);
+    
+ 
+    CvScalar scalar = cvAvg(gray);
+
+    printf("图片亮度 %f", scalar.val[0]);
+}
+
+void drawROI(IplImage *image) {
+    
+}
+
+
+IplImage* inpaint_mask = 0;
+IplImage* img0 = 0, *img = 0, *inpainted = 0;
+CvPoint prev_pt = {-1,-1};
+
+void on_mouse( int event, int x, int y, int flags, void* zhang)
+{
+    if( !img )
+        return;
+    if( event == CV_EVENT_LBUTTONUP || !(flags & CV_EVENT_FLAG_LBUTTON) )
+        prev_pt = cvPoint(-1,-1);//初始化
+    else if( event == CV_EVENT_LBUTTONDOWN )
+        prev_pt = cvPoint(x,y);
+    else if( event == CV_EVENT_MOUSEMOVE && (flags & CV_EVENT_FLAG_LBUTTON) )
+    {//手一直在绘画
+        CvPoint pt = cvPoint(x,y);
+        if( prev_pt.x < 0 )
+            prev_pt = pt;
+        cvLine( inpaint_mask, prev_pt, pt, cvScalarAll(255), 5, 8, 0 );
+        cvLine( img, prev_pt, pt, cvScalarAll(255), 5, 8, 0 );
+        prev_pt = pt;
+        cvShowImage( "image", img );
+    }
+    if (event == CV_EVENT_RBUTTONUP) {
+        cvFloodFill(inpaint_mask, cvPoint(x, y), cvScalarAll(255));
+        IplImage*  segImage = cvCreateImage(cvGetSize(img), 8, 3);
+        cvCopy(img, segImage, inpaint_mask);
+        cvShowImage("water", segImage);
+    }
+}
+void copyImg();
+void s2iImageoperator() {
+    copyImg();
+//    img = cvLoadImage("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg");
+//
+//    cvNamedWindow("image");
+//    inpainted = cvCloneImage(img);
+//    inpaint_mask = cvCreateImage(cvGetSize(img), 8, 1);
+//    cvZero(inpaint_mask);
+//    cvZero(inpainted);
+//    cvSetMouseCallback("image", on_mouse, 0);
+//    cvRect(0, 0, 100, 200);
+//    cvRectangle(img, cvPoint(0, 0), cvPoint(200, 200), cvScalarAll(255));
+//
+//    cvShowImage("image", img);
+//    cvFloodFill(inpaint_mask, cvPoint(100, 100), cvScalarAll(255));
+//
+//    IplImage*  segImage = cvCreateImage(cvGetSize(img), 8, 3);
+//    cvCopy(img, segImage, inpaint_mask);
+//    cvShowImage("water", segImage);
+    
+//    cvWaitKey();
+}
+
+void draw() {
+    img = cvLoadImage("/Users/jw.hu/Desktop/OpenCV_Source/smarties.png");
+    Rect rect(10,20,100,50);
+    
+    CvMat image_roi = cvMat(100, 50, CV_8U);
+    
+    
+    vector<vector<Point>> contour;
+    vector<Point> pts;
+    pts.push_back(Point(30,45));
+    pts.push_back(Point(100,15));
+    pts.push_back(Point(300,145));
+    pts.push_back(Point(330,240));
+    pts.push_back(Point(50,250));
+    contour.push_back(pts);
+
+    cvNamedWindow("s2i");
+    cvShowImage("s2i", img);
+    while (1) { if (cvWaitKey(15) == 27) { break; } }
+    cvDestroyAllWindows();
+}
+
+void copyImg() {
+    Mat image,mask;
+    Rect r1(0, 0, 1000, 1000);
+    Mat img1,img2,img3,img4;
+    image = imread("/Users/jw.hu/Desktop/OpenCV_Source/image.jpg");
+    mask = Mat::zeros(image.size(), CV_8UC1);
+//    mask(r1).setTo(255);
+    
+    vector<vector<Point>> contour;
+    vector<Point> pts;
+    pts.push_back(Point(30,45));
+    pts.push_back(Point(100,15));
+    pts.push_back(Point(300,145));
+    pts.push_back(Point(330,240));
+    pts.push_back(Point(50,250));
+    contour.push_back(pts);
+    
+    
+    
+    Rect rr = minAreaRect(pts).boundingRect();
+    cout << rr << endl;
+
+    drawContours(mask, contour, 0, Scalar::all(255), -1);
+    
+    img1 = image(rr);
+//    image.copyTo(img1);
+
+    image.copyTo(img2, mask);
+    
+    image.copyTo(img3);
+    img3.setTo(0, mask);
+    
+    imshow("ImageSequence", image);
+    imshow("img1", img1);
+    imshow("img2", img2);
+    imshow("img3", img3);
+    imshow("mask", mask);
+    
+    IplImage ii = img1;
+    IplImage *ii1 = &ii;
+    
+    IplImage i2 = img2;
+    IplImage *ii2 = &i2;
+    
+    IplImage i3 = img3;
+    IplImage *ii3 = &i3;
+    light(ii1);
+    light(ii2);
+    light(ii3);
+    
+    waitKey();
 }

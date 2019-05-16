@@ -11,4 +11,11 @@
 
 #include <stdio.h>
 
+#include "opencv2/core.hpp"
+#include "opencv2/imgproc.hpp"
+#include "opencv2/imgcodecs.hpp"
+#include "opencv2/highgui.hpp"
+
+void light(IplImage *image);
+void s2iImageoperator();
 #endif /* S2iImageTest_hpp */

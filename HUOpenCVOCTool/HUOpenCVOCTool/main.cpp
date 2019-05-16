@@ -15,6 +15,7 @@
 #include "HUFourthChapterAnswer.hpp"
 #include "HUFifthChapterLearning.hpp"
 #include "HUFindSquares.hpp"
+#include "S2iImageTest.hpp"
 
 using namespace std;
 using namespace cv;
@@ -30,7 +31,10 @@ int main(int argc, const char * argv[]) {
    
 //    drawLine();
 //    fourth_first_b();
-    fourth_third();
+//    fourth_third();
+//    IplImage* img = cvLoadImage("/Users/jw.hu/Desktop/OpenCV_Source/smarties.png");
+//    light(img);
+    s2iImageoperator();
     return 0;
 }
 
