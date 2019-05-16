@@ -94,9 +94,10 @@ Mat findSquares(Mat image, vector<vector<Point>> &squares) {
 
 void light(IplImage *image) {
     IplImage* gray = cvCreateImage(cvGetSize(image), image->depth, 1);
-    cvCvtColor(image, gray, CV_BGR2GRAY);
-    
- 
+    if (image->nChannels == 3) {
+        cvCvtColor(image, gray, CV_BGR2GRAY);
+    }
+
     CvScalar scalar = cvAvg(gray);
 
     printf("图片亮度 %f", scalar.val[0]);
@@ -186,7 +187,7 @@ void copyImg() {
     Mat image,mask;
     Rect r1(0, 0, 1000, 1000);
     Mat img1,img2,img3,img4;
-    image = imread("/Users/jw.hu/Desktop/OpenCV_Source/image.jpg");
+    image = imread("/Users/mac/Desktop/OpenCV_Source/apple.jpg");
     mask = Mat::zeros(image.size(), CV_8UC1);
 //    mask(r1).setTo(255);
     
@@ -206,19 +207,41 @@ void copyImg() {
 
     drawContours(mask, contour, 0, Scalar::all(255), -1);
     
-    img1 = image(rr);
-//    image.copyTo(img1);
+//    img1 = image(rr);
+    
+    
+    image.copyTo(img1, mask);
+    img1 = img1(rr);
+
+
+    Mat gray(rr.size(), CV_8U);
+    
+    cvtColor(img1, gray, CV_BGR2GRAY);
+    
+    for (int i = 0; i < rr.tl().x; i++) {
+        for (int j = 0; j < rr.br().y; j++) {
+            char a = img1.at<char>(i,j);
+//            if (a != 255) {
+//
+//                sum += a;
+//                count++;
+//            }
+        }
+    }
+    cout << "char:"<< img1.at<char>(1,1)
+    << ",,,"<< img1.at<char>( 200, 200);
+//    cout << "sum:" << sum << "\ncount:" << count << "\nresult:" << sum / count;
 
     image.copyTo(img2, mask);
-    
-    image.copyTo(img3);
-    img3.setTo(0, mask);
-    
-    imshow("ImageSequence", image);
-    imshow("img1", img1);
+//
+//    image.copyTo(img3);
+//    img3.setTo(0, mask);
+//
+//    imshow("ImageSequence", image);
+    imshow("img1", gray);
     imshow("img2", img2);
-    imshow("img3", img3);
-    imshow("mask", mask);
+//    imshow("img3", img3);
+//    imshow("mask", mask);
     
     IplImage ii = img1;
     IplImage *ii1 = &ii;
@@ -230,7 +253,7 @@ void copyImg() {
     IplImage *ii3 = &i3;
     light(ii1);
     light(ii2);
-    light(ii3);
+//    light(ii3);
     
     waitKey();
 }
