@@ -187,7 +187,7 @@ void copyImg() {
     Mat image,mask;
     Rect r1(0, 0, 1000, 1000);
     Mat img1,img2,img3,img4;
-    image = imread("/Users/mac/Desktop/OpenCV_Source/apple.jpg");
+    image = imread("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg");
     mask = Mat::zeros(image.size(), CV_8UC1);
 //    mask(r1).setTo(255);
     
@@ -218,19 +218,26 @@ void copyImg() {
     
     cvtColor(img1, gray, CV_BGR2GRAY);
     
-    for (int i = 0; i < rr.tl().x; i++) {
+    long sum = 0;
+    int count = 0;
+    for (int i = 0; i < rr.br().x; i++) {
         for (int j = 0; j < rr.br().y; j++) {
-            char a = img1.at<char>(i,j);
-//            if (a != 255) {
-//
-//                sum += a;
+            unsigned char a = (unsigned char)img1.at<char>(i,j);
+            if (a != 0) {
+                sum += a;
+                count++;
+            }
+//            cout << (int)a << " ";
+//            int value = a + 255;
+//            if (value != 255) {
+//                sum += value;
 //                count++;
 //            }
         }
     }
-    cout << "char:"<< img1.at<char>(1,1)
-    << ",,,"<< img1.at<char>( 200, 200);
-//    cout << "sum:" << sum << "\ncount:" << count << "\nresult:" << sum / count;
+    
+    cout << "sum:" << sum << "\ncount:" << count << "\nresult:" << sum / count << endl;
+    
 
     image.copyTo(img2, mask);
 //
