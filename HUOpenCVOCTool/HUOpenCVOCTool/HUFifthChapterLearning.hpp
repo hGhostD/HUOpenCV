@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+void smooth_opeartor();
+
 #endif /* HUFifthChapterLearning_hpp */

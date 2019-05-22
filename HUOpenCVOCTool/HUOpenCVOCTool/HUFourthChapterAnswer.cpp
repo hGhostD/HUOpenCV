@@ -119,6 +119,10 @@ void fourth_second() {
 
 void showpiexl(IplImage* img, int x, int y) {
     CvScalar rgb = cvGet2D(img, y, x);
+    CvMat mat;
+    
+
+    
     char label[40];
     sprintf(label, "(%f, %f, %f)", rgb.val[2], rgb.val[1], rgb.val[0]);
     

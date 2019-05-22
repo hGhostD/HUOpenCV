@@ -17,5 +17,5 @@
 #include "opencv2/highgui.hpp"
 
 void imageClarity();
-
+void imageOperator();
 #endif /* S2iReflective_hpp */

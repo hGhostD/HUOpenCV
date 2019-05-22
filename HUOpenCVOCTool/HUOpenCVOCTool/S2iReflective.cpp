@@ -82,3 +82,19 @@ void imageClarity() {
     waitKey();
     
 }
+
+void imageOperator() {
+    Mat img = imread("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg");
+    imshow("source", img);
+    
+    Mat gray;
+    cvtColor(img, gray, CV_BGR2GRAY);
+    imshow("gray", gray);
+    
+    // 轮廓
+    Mat canny;
+    Canny(gray, canny, 200, 500);
+    imshow("canny", canny);
+    
+    waitKey();
+}

@@ -226,7 +226,6 @@ void copyImg() {
     cout << img1.channels()
     << gray.channels()
     << colorsImg.channels();
-    
     long sum = 0;
     int count = 0;
     cout << "tl:" << rr.tl().x << "," << rr.tl().y << endl;
