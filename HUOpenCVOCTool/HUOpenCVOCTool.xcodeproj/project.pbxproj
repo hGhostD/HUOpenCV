@@ -10,6 +10,7 @@
 		752C477122719E7C00984297 /* HUFindSquares.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 752C476F22719E7C00984297 /* HUFindSquares.cpp */; };
 		7554BA63213CE388001F3CA6 /* HUThirdChapterAnswer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7554BA61213CE388001F3CA6 /* HUThirdChapterAnswer.cpp */; };
 		757B5FF92145FEB8008CF73F /* HUHighGUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 757B5FF72145FEB8008CF73F /* HUHighGUI.cpp */; };
+		75A1A1BB229395A300F93BE3 /* S2iReflective.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75A1A1B9229395A300F93BE3 /* S2iReflective.cpp */; };
 		75A376902281811600371417 /* S2iImageTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75A3768E2281811600371417 /* S2iImageTest.cpp */; };
 		75CAEA3B21363ECA001AC1B9 /* HUChangeImageTool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75CAEA3921363ECA001AC1B9 /* HUChangeImageTool.cpp */; };
 		75CBCAD72134E76800E66513 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75CBCAD62134E76800E66513 /* main.cpp */; };
@@ -130,6 +131,8 @@
 		7554BA62213CE388001F3CA6 /* HUThirdChapterAnswer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HUThirdChapterAnswer.hpp; sourceTree = "<group>"; };
 		757B5FF72145FEB8008CF73F /* HUHighGUI.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HUHighGUI.cpp; sourceTree = "<group>"; };
 		757B5FF82145FEB8008CF73F /* HUHighGUI.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HUHighGUI.hpp; sourceTree = "<group>"; };
+		75A1A1B9229395A300F93BE3 /* S2iReflective.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = S2iReflective.cpp; sourceTree = "<group>"; };
+		75A1A1BA229395A300F93BE3 /* S2iReflective.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = S2iReflective.hpp; sourceTree = "<group>"; };
 		75A3768E2281811600371417 /* S2iImageTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = S2iImageTest.cpp; sourceTree = "<group>"; };
 		75A3768F2281811600371417 /* S2iImageTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = S2iImageTest.hpp; sourceTree = "<group>"; };
 		75CAEA3921363ECA001AC1B9 /* HUChangeImageTool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HUChangeImageTool.cpp; sourceTree = "<group>"; };
@@ -369,6 +372,8 @@
 				752C476F22719E7C00984297 /* HUFindSquares.cpp */,
 				75A3768E2281811600371417 /* S2iImageTest.cpp */,
 				75A3768F2281811600371417 /* S2iImageTest.hpp */,
+				75A1A1B9229395A300F93BE3 /* S2iReflective.cpp */,
+				75A1A1BA229395A300F93BE3 /* S2iReflective.hpp */,
 			);
 			name = "识别正方形";
 			sourceTree = "<group>";
@@ -574,6 +579,7 @@
 				7554BA63213CE388001F3CA6 /* HUThirdChapterAnswer.cpp in Sources */,
 				85294886216485690062F080 /* HUFifthChapterLearning.cpp in Sources */,
 				75A376902281811600371417 /* S2iImageTest.cpp in Sources */,
+				75A1A1BB229395A300F93BE3 /* S2iReflective.cpp in Sources */,
 				752C477122719E7C00984297 /* HUFindSquares.cpp in Sources */,
 				75CBCAD72134E76800E66513 /* main.cpp in Sources */,
 				75CBCCA321354E1300E66513 /* HUPlayAVITool.cpp in Sources */,

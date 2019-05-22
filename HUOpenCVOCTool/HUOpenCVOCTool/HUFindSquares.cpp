@@ -106,7 +106,7 @@ static void findSquares( const Mat& image, vector<vector<Point> >& squares )
                     // if cosines of all angles are small
                     // (all angles are ~90 degree) then write quandrange
                     // vertices to resultant sequence
-                    if( maxCosine < 0.3 )
+                    if( maxCosine < 0.1 )
                         squares.push_back(approx);
                 }
             }
@@ -126,13 +126,16 @@ static void drawSquares(Mat& image, const vector<vector<Point> >& squares )
     }
     
     imshow(wndname, image);
+    bool save = imwrite("/Users/jw.hu/Desktop/image.jpg", image);
+    cout << save << endl;
 }
 
 
 int findS()
 {
-    static const char* names[] = { "pic1.png", "pic2.png", "pic3.png",
-        "pic4.png", "pic5.png", "pic6.png", 0 };
+//    static const char* names[] = { "pic1.png", "pic2.png", "pic3.png",
+//        "pic4.png", "pic5.png", "pic6.png", 0 };
+    static const char* names[] = { "abc_1.jpg", "abc_2.jpg", 0 };
 
     vector<vector<Point> > squares;
     

@@ -185,19 +185,17 @@ void draw() {
 
 void copyImg() {
     Mat image,mask;
-    Rect r1(0, 0, 1000, 1000);
     Mat img1,img2,img3,img4;
-    image = imread("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg");
+    image = imread("/Users/jw.hu/Desktop/OpenCV_Source/reflective.png");
     mask = Mat::zeros(image.size(), CV_8UC1);
 //    mask(r1).setTo(255);
     
     vector<vector<Point>> contour;
     vector<Point> pts;
-    pts.push_back(Point(30,45));
-    pts.push_back(Point(100,15));
-    pts.push_back(Point(300,145));
-    pts.push_back(Point(330,240));
-    pts.push_back(Point(50,250));
+    pts.push_back(Point(12, 10));
+    pts.push_back(Point(162, 2));
+    pts.push_back(Point(179, 148));
+    pts.push_back(Point(16, 163));
     contour.push_back(pts);
     
     
@@ -211,32 +209,47 @@ void copyImg() {
     
     
     image.copyTo(img1, mask);
+    if (rr.x < 0) {
+        rr.x = 5;
+    }
+    if (rr.y < 0) {
+        rr.y = 0;
+    }
     img1 = img1(rr);
 
 
     Mat gray(rr.size(), CV_8U);
     
     cvtColor(img1, gray, CV_BGR2GRAY);
+    Mat colorsImg;
+    cvtColor(img1, colorsImg, CV_BGR2BGRA);
+    cout << img1.channels()
+    << gray.channels()
+    << colorsImg.channels();
     
     long sum = 0;
     int count = 0;
-    for (int i = 0; i < rr.br().x; i++) {
-        for (int j = 0; j < rr.br().y; j++) {
-            unsigned char a = (unsigned char)img1.at<char>(i,j);
+    cout << "tl:" << rr.tl().x << "," << rr.tl().y << endl;
+    cout << "br:" << rr.br().x << "," << rr.br().y << endl;
+    for (int i = rr.tl().x; i < rr.br().x; i++) {
+        cout << endl;
+        for (int j = rr.tl().y; j < rr.br().y; j++) {
+            Vec3b data = img1.at<Vec3b>(i,j);
+            int a = data[0];
+            int b = data[1];
+            int c = data[2];
+//            int a = (int)img1.at<Vec3d>(i) ;
+            cout << "a:" << a << " " ;
+            cout << "b:" << b << " " ;
+            cout << "c:" << c << " " <<endl;
             if (a != 0) {
                 sum += a;
                 count++;
             }
-//            cout << (int)a << " ";
-//            int value = a + 255;
-//            if (value != 255) {
-//                sum += value;
-//                count++;
-//            }
         }
     }
     
-    cout << "sum:" << sum << "\ncount:" << count << "\nresult:" << sum / count << endl;
+//    cout << "sum:" << sum << "\ncount:" << count << "\nresult:" << sum / count << endl;
     
 
     image.copyTo(img2, mask);
