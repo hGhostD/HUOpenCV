@@ -44,7 +44,28 @@ void cv_erode() {
     waitKey();
 }
 
+void floodFillOpeartor() {
+    Mat img = imread("/Users/jw.hu/Desktop/2.jpg");
+    Mat dst;
+    pyrUp(img, dst);
+    pyrDown(dst, dst);
+
+    imshow("img", img);
+    imshow("pyr", dst);
+    waitKey();
+}
+
+void thresholdOPerator() {
+    Mat img = imread("/Users/jw.hu/Desktop/2.jpg");
+    Mat dst;
+    
+    threshold(img, dst, 125, 120, CV_THRESH_BINARY);
+    imshow("img", img);
+    imshow("pyr", dst);
+    waitKey();
+}
+
 void smooth_opeartor() {
+    thresholdOPerator();
 //    cv_smooth();
-    cv_erode();
 }

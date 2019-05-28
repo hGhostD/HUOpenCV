@@ -23,16 +23,7 @@ using namespace std;
 using namespace cv;
 
 int main(int argc, const char * argv[]) {
-
-//    findS();
-//    imageClarity();
-//    imageOperator();
-
-    smooth_opeartor();
     
+    smooth_opeartor();
     return 0;
 }
-
-
-
-
