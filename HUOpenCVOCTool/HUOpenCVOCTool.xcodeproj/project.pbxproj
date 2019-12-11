@@ -413,6 +413,7 @@
 				75921C882284069200E97002 /* 第三章 */,
 				75921C872284067C00E97002 /* 第四章 */,
 				75921C8A228406A900E97002 /* 第五章 */,
+				75D75A5022A51FAE004D711F /* 第六章 */,
 				75921C892284069E00E97002 /* 识别正方形 */,
 			);
 			path = HUOpenCVOCTool;
@@ -516,6 +517,13 @@
 				75CBCAF82134E83000E66513 /* pkgconfig */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75D75A5022A51FAE004D711F /* 第六章 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "第六章";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

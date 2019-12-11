@@ -24,6 +24,7 @@ using namespace cv;
 
 int main(int argc, const char * argv[]) {
     
-    smooth_opeartor();
+//    smooth_opeartor();
+    imageOperator();
     return 0;
 }
