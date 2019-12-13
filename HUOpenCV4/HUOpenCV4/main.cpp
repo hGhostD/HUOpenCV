@@ -8,20 +8,12 @@
 
 #include <iostream>
 #include <opencv.hpp>
-#include <highgui.hpp>
+#include "SecondClass.hpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
+//    showImage();
     cv::Mat img = cv::imread("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg");
-    if (img.empty()) {
-        return -1;
-    }
-    
-    cv::namedWindow("Example1", cv::WINDOW_AUTOSIZE);
-    
-    cv::imshow("Example1", img);
-    cv::waitKey();
-    cv::destroyAllWindows();
-    
+    exapmple2_5(img);
     return 0;
 }
