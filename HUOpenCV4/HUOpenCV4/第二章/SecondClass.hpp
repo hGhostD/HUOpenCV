@@ -16,5 +16,7 @@ void showImage();
 void showVideo();
 void sliderVideo();
 void exapmple2_5(const cv::Mat &image);
-
+void pyr_test(const cv::Mat &image);
+void canny_test(const cv::Mat &image);
+void camera_test();
 #endif /* SecondClass_hpp */

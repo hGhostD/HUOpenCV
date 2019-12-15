@@ -218,6 +218,7 @@
 		7590AA6523A0DE6B009DD837 /* libsimple_pipeline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7590A8C223A0DE5A009DD837 /* libsimple_pipeline.a */; };
 		7590AA6723A0DE77009DD837 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7590AA6623A0DE77009DD837 /* libc++.tbd */; };
 		75A9980923A36DC100AEA9A2 /* SecondClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75A9980723A36DC100AEA9A2 /* SecondClass.cpp */; };
+		8525CC0C23A66B3B0066EF26 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 8525CC0B23A66B150066EF26 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -893,6 +894,7 @@
 		7590AA6623A0DE77009DD837 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		75A9980723A36DC100AEA9A2 /* SecondClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SecondClass.cpp; sourceTree = "<group>"; };
 		75A9980823A36DC100AEA9A2 /* SecondClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SecondClass.hpp; sourceTree = "<group>"; };
+		8525CC0B23A66B150066EF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1136,6 +1138,7 @@
 			isa = PBXGroup;
 			children = (
 				755A14FD23A362280077C1CC /* HUOpenCV4.entitlements */,
+				8525CC0B23A66B150066EF26 /* Info.plist */,
 				7590A61C23A0DDB3009DD837 /* main.cpp */,
 				75A9980623A36D8800AEA9A2 /* 第二章 */,
 			);
@@ -2032,6 +2035,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8525CC0C23A66B3B0066EF26 /* Info.plist in Sources */,
 				75A9980923A36DC100AEA9A2 /* SecondClass.cpp in Sources */,
 				7590A61D23A0DDB3009DD837 /* main.cpp in Sources */,
 			);
@@ -2155,16 +2159,19 @@
 				CODE_SIGN_ENTITLEMENTS = HUOpenCV4/HUOpenCV4.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7SKZP3W4L7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/Cellar/opencv/4.1.2/include/opencv4/opencv2,
 					/usr/local/Cellar/opencv/4.1.2/include/opencv4,
 				);
+				INFOPLIST_FILE = "$(SRCROOT)/HUOpenCV4/Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/opencv/4.1.2/lib,
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.opencv4.hu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2181,16 +2188,19 @@
 				CODE_SIGN_ENTITLEMENTS = HUOpenCV4/HUOpenCV4.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7SKZP3W4L7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/Cellar/opencv/4.1.2/include/opencv4/opencv2,
 					/usr/local/Cellar/opencv/4.1.2/include/opencv4,
 				);
+				INFOPLIST_FILE = "$(SRCROOT)/HUOpenCV4/Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/opencv/4.1.2/lib,
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.opencv4.hu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

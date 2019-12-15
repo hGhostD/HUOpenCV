@@ -13,7 +13,9 @@
 int main(int argc, const char * argv[]) {
     // insert code here...
 //    showImage();
-    cv::Mat img = cv::imread("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg");
-    exapmple2_5(img);
+//    cv::Mat img = cv::imread("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg");
+    cv::Mat img = cv::imread("/Users/mac/Desktop/OpenCV_Source/apple.jpg");
+    
+    camera_test();
     return 0;
 }
