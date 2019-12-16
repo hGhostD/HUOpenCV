@@ -14,8 +14,9 @@ int main(int argc, const char * argv[]) {
     // insert code here...
 //    showImage();
 //    cv::Mat img = cv::imread("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg");
-    cv::Mat img = cv::imread("/Users/mac/Desktop/OpenCV_Source/apple.jpg");
+//    cv::Mat img = cv::imread("/Users/mac/Desktop/OpenCV_Source/apple.jpg");
     
-    camera_test();
+//    camera_test();
+//    write_test("/Users/jw.hu/Desktop/OpenCV_Source/tree.avi");
     return 0;
 }

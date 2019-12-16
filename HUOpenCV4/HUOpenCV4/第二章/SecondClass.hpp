@@ -19,4 +19,6 @@ void exapmple2_5(const cv::Mat &image);
 void pyr_test(const cv::Mat &image);
 void canny_test(const cv::Mat &image);
 void camera_test();
+void write_test(const cv::String &filename);
+
 #endif /* SecondClass_hpp */

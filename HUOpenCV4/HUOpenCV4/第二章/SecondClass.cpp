@@ -160,3 +160,36 @@ void camera_test() {
         if (cv::waitKey(33) >= 0) { break; }
     }
 }
+
+void write_test(const String &filename) {
+    cv::VideoCapture cap(filename);
+    double fps = cap.get(cv::CAP_PROP_FPS);
+    cv::Size size((int)cap.get(cv::CAP_PROP_FRAME_WIDTH) / 2
+                  ,(int)cap.get(cv::CAP_PROP_FRAME_WIDTH) / 2);
+    
+    cv::VideoWriter writer;
+    writer.open("/Users/jw.hu/Desktop/tree.avi", CAP_OPENCV_MJPEG, fps, size);
+//    cv::VideoWriter::fourcc('M', 'J', 'P', 'G');
+    cv::Mat logpolar_frame, bgr_frame;
+    
+    while (1) {
+        cap >> bgr_frame;
+        if (bgr_frame.empty()) { break; }
+        
+        cv::imshow("Video", bgr_frame);
+        
+        cv::logPolar(bgr_frame,
+                     logpolar_frame,
+                     cv::Point2f(bgr_frame.cols / 2,
+                                 bgr_frame.rows / 2),
+                     40,
+                     cv::WARP_FILL_OUTLIERS);
+        cv::pyrDown(logpolar_frame, logpolar_frame);
+        cv::imshow("LOG_Polar", logpolar_frame);
+        
+        writer << logpolar_frame;
+        char c = cv::waitKey(10);
+        if (c == 27) { break; }
+    }
+    cap.release();
+}
