@@ -9,6 +9,7 @@
 #include <iostream>
 #include <opencv.hpp>
 #include "SecondClass.hpp"
+#include "FourthClass.hpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -18,5 +19,8 @@ int main(int argc, const char * argv[]) {
     
 //    camera_test();
 //    write_test("/Users/jw.hu/Desktop/OpenCV_Source/tree.avi");
+    // 第四章
+    mat_test();
+    
     return 0;
 }
