@@ -12,5 +12,5 @@
 #include <stdio.h>
 
 void mat_test();
-
+void mat_copy();
 #endif /* FourthClass_hpp */

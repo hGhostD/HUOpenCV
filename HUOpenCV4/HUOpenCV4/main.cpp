@@ -20,7 +20,8 @@ int main(int argc, const char * argv[]) {
 //    camera_test();
 //    write_test("/Users/jw.hu/Desktop/OpenCV_Source/tree.avi");
     // 第四章
-    mat_test();
+//    mat_test();
+    mat_copy();
     
     return 0;
 }

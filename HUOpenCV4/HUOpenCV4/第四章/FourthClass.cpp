@@ -15,3 +15,19 @@ void mat_test() {
     cv::imshow("mat", mat);
     cv::waitKey();
 }
+
+void mat_copy() {
+    cv::Mat apple = cv::imread("/Users/mac/Desktop/OpenCV_Source/apple.jpg");
+    cv::Range range(100, 100);
+    // Rect
+    cv::Rect rect(10, 10, 200, 200);
+    cv::Mat mat(apple, rect);
+    cv::imshow("rect", mat);
+    // Range
+    cv::Range rangeRow(10, 210);
+    cv::Range rangeCol(10, 210);
+    cv::Mat matRange(apple, rangeRow, rangeCol);
+    cv::imshow("range", matRange);
+    cv::waitKey();
+
+}
