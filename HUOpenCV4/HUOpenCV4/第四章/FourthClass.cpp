@@ -17,7 +17,7 @@ void mat_test() {
 }
 
 void mat_copy() {
-    cv::Mat apple = cv::imread("/Users/mac/Desktop/OpenCV_Source/apple.jpg");
+    cv::Mat apple = cv::imread("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg");
     cv::Range range(100, 100);
     // Rect
     cv::Rect rect(10, 10, 200, 200);

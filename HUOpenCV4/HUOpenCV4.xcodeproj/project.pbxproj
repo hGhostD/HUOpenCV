@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7554DCAD23A882AB00B55DC2 /* ThirdClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7554DCAB23A882AB00B55DC2 /* ThirdClass.cpp */; };
 		7590A61D23A0DDB3009DD837 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7590A61C23A0DDB3009DD837 /* main.cpp */; };
 		7590A99623A0DE6A009DD837 /* libade.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7590A95D23A0DE5A009DD837 /* libade.a */; };
 		7590A99723A0DE6A009DD837 /* libcorrespondence.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7590A8BE23A0DE5A009DD837 /* libcorrespondence.a */; };
@@ -235,6 +236,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7554DCAB23A882AB00B55DC2 /* ThirdClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ThirdClass.cpp; sourceTree = "<group>"; };
+		7554DCAC23A882AB00B55DC2 /* ThirdClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ThirdClass.hpp; sourceTree = "<group>"; };
 		755A14FD23A362280077C1CC /* HUOpenCV4.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HUOpenCV4.entitlements; sourceTree = "<group>"; };
 		7590A61923A0DDB3009DD837 /* HUOpenCV4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HUOpenCV4; sourceTree = BUILT_PRODUCTS_DIR; };
 		7590A61C23A0DDB3009DD837 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -1120,6 +1123,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7554DCAA23A8829000B55DC2 /* 第三章 */ = {
+			isa = PBXGroup;
+			children = (
+				7554DCAB23A882AB00B55DC2 /* ThirdClass.cpp */,
+				7554DCAC23A882AB00B55DC2 /* ThirdClass.hpp */,
+			);
+			path = "第三章";
+			sourceTree = "<group>";
+		};
 		7590A61023A0DDB3009DD837 = {
 			isa = PBXGroup;
 			children = (
@@ -1144,6 +1156,7 @@
 				8525CC0B23A66B150066EF26 /* Info.plist */,
 				7590A61C23A0DDB3009DD837 /* main.cpp */,
 				75A9980623A36D8800AEA9A2 /* 第二章 */,
+				7554DCAA23A8829000B55DC2 /* 第三章 */,
 				85B5485323AA78F1002ACCFA /* 第四章 */,
 			);
 			path = HUOpenCV4;
@@ -2048,6 +2061,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7554DCAD23A882AB00B55DC2 /* ThirdClass.cpp in Sources */,
 				8525CC0C23A66B3B0066EF26 /* Info.plist in Sources */,
 				75A9980923A36DC100AEA9A2 /* SecondClass.cpp in Sources */,
 				85B5485623AA7928002ACCFA /* FourthClass.cpp in Sources */,
