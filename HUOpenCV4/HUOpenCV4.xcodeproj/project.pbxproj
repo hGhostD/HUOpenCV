@@ -219,6 +219,7 @@
 		7590AA6523A0DE6B009DD837 /* libsimple_pipeline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7590A8C223A0DE5A009DD837 /* libsimple_pipeline.a */; };
 		7590AA6723A0DE77009DD837 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7590AA6623A0DE77009DD837 /* libc++.tbd */; };
 		75A9980923A36DC100AEA9A2 /* SecondClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75A9980723A36DC100AEA9A2 /* SecondClass.cpp */; };
+		75C7611323D5A93F00276CB9 /* FifthClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75C7611123D5A93F00276CB9 /* FifthClass.cpp */; };
 		8525CC0C23A66B3B0066EF26 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 8525CC0B23A66B150066EF26 /* Info.plist */; };
 		85B5485623AA7928002ACCFA /* FourthClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85B5485423AA7928002ACCFA /* FourthClass.cpp */; };
 /* End PBXBuildFile section */
@@ -898,6 +899,8 @@
 		7590AA6623A0DE77009DD837 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		75A9980723A36DC100AEA9A2 /* SecondClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SecondClass.cpp; sourceTree = "<group>"; };
 		75A9980823A36DC100AEA9A2 /* SecondClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SecondClass.hpp; sourceTree = "<group>"; };
+		75C7611123D5A93F00276CB9 /* FifthClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FifthClass.cpp; sourceTree = "<group>"; };
+		75C7611223D5A93F00276CB9 /* FifthClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FifthClass.hpp; sourceTree = "<group>"; };
 		8525CC0B23A66B150066EF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85B5485423AA7928002ACCFA /* FourthClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FourthClass.cpp; sourceTree = "<group>"; };
 		85B5485523AA7928002ACCFA /* FourthClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FourthClass.hpp; sourceTree = "<group>"; };
@@ -1158,6 +1161,7 @@
 				75A9980623A36D8800AEA9A2 /* 第二章 */,
 				7554DCAA23A8829000B55DC2 /* 第三章 */,
 				85B5485323AA78F1002ACCFA /* 第四章 */,
+				75C7611023D5A91000276CB9 /* 第五章 */,
 			);
 			path = HUOpenCV4;
 			sourceTree = "<group>";
@@ -1995,6 +1999,15 @@
 			path = "第二章";
 			sourceTree = "<group>";
 		};
+		75C7611023D5A91000276CB9 /* 第五章 */ = {
+			isa = PBXGroup;
+			children = (
+				75C7611123D5A93F00276CB9 /* FifthClass.cpp */,
+				75C7611223D5A93F00276CB9 /* FifthClass.hpp */,
+			);
+			path = "第五章";
+			sourceTree = "<group>";
+		};
 		85B5485323AA78F1002ACCFA /* 第四章 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2061,6 +2074,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75C7611323D5A93F00276CB9 /* FifthClass.cpp in Sources */,
 				7554DCAD23A882AB00B55DC2 /* ThirdClass.cpp in Sources */,
 				8525CC0C23A66B3B0066EF26 /* Info.plist in Sources */,
 				75A9980923A36DC100AEA9A2 /* SecondClass.cpp in Sources */,

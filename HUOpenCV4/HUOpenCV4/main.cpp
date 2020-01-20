@@ -11,6 +11,7 @@
 #include "SecondClass.hpp"
 #include "ThirdClass.hpp"
 #include "FourthClass.hpp"
+#include "FifthClass.hpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -24,7 +25,11 @@ int main(int argc, const char * argv[]) {
 //    learn();
     // 第四章
 //    mat_test();
-    mat_copy();
-    
+//    mat_copy();
+//    example_4_1();
+//    test_4_a();
+    // 第五场
+    learn_abs();
+
     return 0;
 }

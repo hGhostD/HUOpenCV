@@ -13,4 +13,8 @@
 
 void mat_test();
 void mat_copy();
+void example_4_1();
+void range_copy();
+void test_4_a();
+
 #endif /* FourthClass_hpp */
