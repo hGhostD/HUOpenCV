@@ -15,6 +15,7 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
+    // 第二章
 //    showImage();
 //    cv::Mat img = cv::imread("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg");
 //    cv::Mat img = cv::imread("/Users/mac/Desktop/OpenCV_Source/apple.jpg");
