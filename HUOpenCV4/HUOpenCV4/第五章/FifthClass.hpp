@@ -12,5 +12,9 @@
 #include <stdio.h>
 
 void learn_abs();
-
+void example_5_1_a();
+void example_5_2();
+void example_5_4();
+void example_5_5();
+void example_5_6();
 #endif /* FifthClass_hpp */

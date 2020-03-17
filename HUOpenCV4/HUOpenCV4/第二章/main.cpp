@@ -29,8 +29,13 @@ int main(int argc, const char * argv[]) {
 //    mat_copy();
 //    example_4_1();
 //    test_4_a();
-    // 第五场
-    learn_abs();
-
+    // 第五章
+//    learn_abs();
+//    example_5_1_a();
+//    example_5_2();
+//    example_5_4();
+//    example_5_5();
+    example_5_6();
+    
     return 0;
 }

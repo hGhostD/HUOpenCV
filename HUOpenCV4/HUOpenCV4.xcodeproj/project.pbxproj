@@ -1367,7 +1367,6 @@
 			children = (
 				755A14FD23A362280077C1CC /* HUOpenCV4.entitlements */,
 				8525CC0B23A66B150066EF26 /* Info.plist */,
-				7590A61C23A0DDB3009DD837 /* main.cpp */,
 				75A9980623A36D8800AEA9A2 /* 第二章 */,
 				7554DCAA23A8829000B55DC2 /* 第三章 */,
 				85B5485323AA78F1002ACCFA /* 第四章 */,
@@ -2432,6 +2431,7 @@
 		75A9980623A36D8800AEA9A2 /* 第二章 */ = {
 			isa = PBXGroup;
 			children = (
+				7590A61C23A0DDB3009DD837 /* main.cpp */,
 				75A9980723A36DC100AEA9A2 /* SecondClass.cpp */,
 				75A9980823A36DC100AEA9A2 /* SecondClass.hpp */,
 			);
