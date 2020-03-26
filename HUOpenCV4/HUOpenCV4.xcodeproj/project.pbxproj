@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7516B619242CB3A90060C7A4 /* SeventhClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7516B617242CB3A90060C7A4 /* SeventhClass.cpp */; };
+		7516B61C242CB3BC0060C7A4 /* EighthClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7516B61A242CB3BC0060C7A4 /* EighthClass.cpp */; };
 		7554DCAD23A882AB00B55DC2 /* ThirdClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7554DCAB23A882AB00B55DC2 /* ThirdClass.cpp */; };
 		758CAA022410FCE90034290C /* libopencv_stitching.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 758CA9322410FCDD0034290C /* libopencv_stitching.dylib */; };
 		758CAA032410FCE90034290C /* libopencv_xfeatures2d.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 758CA9332410FCDD0034290C /* libopencv_xfeatures2d.dylib */; };
@@ -219,6 +221,7 @@
 		7590A61D23A0DDB3009DD837 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7590A61C23A0DDB3009DD837 /* main.cpp */; };
 		75A9980923A36DC100AEA9A2 /* SecondClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75A9980723A36DC100AEA9A2 /* SecondClass.cpp */; };
 		75C7611323D5A93F00276CB9 /* FifthClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75C7611123D5A93F00276CB9 /* FifthClass.cpp */; };
+		75DDD5D82421F2EB0048C4E1 /* SixthClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75DDD5D62421F2EB0048C4E1 /* SixthClass.cpp */; };
 		8525CC0C23A66B3B0066EF26 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 8525CC0B23A66B150066EF26 /* Info.plist */; };
 		85B5485623AA7928002ACCFA /* FourthClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85B5485423AA7928002ACCFA /* FourthClass.cpp */; };
 /* End PBXBuildFile section */
@@ -236,6 +239,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7516B617242CB3A90060C7A4 /* SeventhClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SeventhClass.cpp; sourceTree = "<group>"; };
+		7516B618242CB3A90060C7A4 /* SeventhClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SeventhClass.hpp; sourceTree = "<group>"; };
+		7516B61A242CB3BC0060C7A4 /* EighthClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EighthClass.cpp; sourceTree = "<group>"; };
+		7516B61B242CB3BC0060C7A4 /* EighthClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EighthClass.hpp; sourceTree = "<group>"; };
 		7554DCAB23A882AB00B55DC2 /* ThirdClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ThirdClass.cpp; sourceTree = "<group>"; };
 		7554DCAC23A882AB00B55DC2 /* ThirdClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ThirdClass.hpp; sourceTree = "<group>"; };
 		755A14FD23A362280077C1CC /* HUOpenCV4.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HUOpenCV4.entitlements; sourceTree = "<group>"; };
@@ -1112,6 +1119,8 @@
 		75A9980823A36DC100AEA9A2 /* SecondClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SecondClass.hpp; sourceTree = "<group>"; };
 		75C7611123D5A93F00276CB9 /* FifthClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FifthClass.cpp; sourceTree = "<group>"; };
 		75C7611223D5A93F00276CB9 /* FifthClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FifthClass.hpp; sourceTree = "<group>"; };
+		75DDD5D62421F2EB0048C4E1 /* SixthClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SixthClass.cpp; sourceTree = "<group>"; };
+		75DDD5D72421F2EB0048C4E1 /* SixthClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SixthClass.hpp; sourceTree = "<group>"; };
 		8525CC0B23A66B150066EF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85B5485423AA7928002ACCFA /* FourthClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FourthClass.cpp; sourceTree = "<group>"; };
 		85B5485523AA7928002ACCFA /* FourthClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FourthClass.hpp; sourceTree = "<group>"; };
@@ -1336,6 +1345,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7516B615242CB36D0060C7A4 /* 第七章 */ = {
+			isa = PBXGroup;
+			children = (
+				7516B617242CB3A90060C7A4 /* SeventhClass.cpp */,
+				7516B618242CB3A90060C7A4 /* SeventhClass.hpp */,
+			);
+			path = "第七章";
+			sourceTree = "<group>";
+		};
+		7516B616242CB3740060C7A4 /* 第八章 */ = {
+			isa = PBXGroup;
+			children = (
+				7516B61A242CB3BC0060C7A4 /* EighthClass.cpp */,
+				7516B61B242CB3BC0060C7A4 /* EighthClass.hpp */,
+			);
+			path = "第八章";
+			sourceTree = "<group>";
+		};
 		7554DCAA23A8829000B55DC2 /* 第三章 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1365,12 +1392,16 @@
 		7590A61B23A0DDB3009DD837 /* HUOpenCV4 */ = {
 			isa = PBXGroup;
 			children = (
+				7590A61C23A0DDB3009DD837 /* main.cpp */,
 				755A14FD23A362280077C1CC /* HUOpenCV4.entitlements */,
 				8525CC0B23A66B150066EF26 /* Info.plist */,
 				75A9980623A36D8800AEA9A2 /* 第二章 */,
 				7554DCAA23A8829000B55DC2 /* 第三章 */,
 				85B5485323AA78F1002ACCFA /* 第四章 */,
 				75C7611023D5A91000276CB9 /* 第五章 */,
+				75DDD5D52421F29E0048C4E1 /* 第六章 */,
+				7516B615242CB36D0060C7A4 /* 第七章 */,
+				7516B616242CB3740060C7A4 /* 第八章 */,
 			);
 			path = HUOpenCV4;
 			sourceTree = "<group>";
@@ -2431,7 +2462,6 @@
 		75A9980623A36D8800AEA9A2 /* 第二章 */ = {
 			isa = PBXGroup;
 			children = (
-				7590A61C23A0DDB3009DD837 /* main.cpp */,
 				75A9980723A36DC100AEA9A2 /* SecondClass.cpp */,
 				75A9980823A36DC100AEA9A2 /* SecondClass.hpp */,
 			);
@@ -2445,6 +2475,15 @@
 				75C7611223D5A93F00276CB9 /* FifthClass.hpp */,
 			);
 			path = "第五章";
+			sourceTree = "<group>";
+		};
+		75DDD5D52421F29E0048C4E1 /* 第六章 */ = {
+			isa = PBXGroup;
+			children = (
+				75DDD5D62421F2EB0048C4E1 /* SixthClass.cpp */,
+				75DDD5D72421F2EB0048C4E1 /* SixthClass.hpp */,
+			);
+			path = "第六章";
 			sourceTree = "<group>";
 		};
 		85B5485323AA78F1002ACCFA /* 第四章 */ = {
@@ -2513,11 +2552,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DDD5D82421F2EB0048C4E1 /* SixthClass.cpp in Sources */,
 				75C7611323D5A93F00276CB9 /* FifthClass.cpp in Sources */,
 				7554DCAD23A882AB00B55DC2 /* ThirdClass.cpp in Sources */,
 				8525CC0C23A66B3B0066EF26 /* Info.plist in Sources */,
+				7516B619242CB3A90060C7A4 /* SeventhClass.cpp in Sources */,
 				75A9980923A36DC100AEA9A2 /* SecondClass.cpp in Sources */,
 				85B5485623AA7928002ACCFA /* FourthClass.cpp in Sources */,
+				7516B61C242CB3BC0060C7A4 /* EighthClass.cpp in Sources */,
 				7590A61D23A0DDB3009DD837 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
