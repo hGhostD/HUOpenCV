@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+void lean_RNG();
+
 #endif /* SeventhClass_hpp */

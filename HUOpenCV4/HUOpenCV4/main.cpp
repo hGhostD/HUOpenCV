@@ -44,11 +44,9 @@ int main(int argc, const char * argv[]) {
 //    example_6_2();
 //    example_6_3();
     // 第七章
+    lean_RNG();
     // 第八章
 
-    cv::Mat img = cv::imread("/Users/jw.hu/Desktop/e89ba7d5-0c2b-47c6-9651-fe25cccc0c58.bmp");
-    cv::cvtColor(img, img, cv::COLOR_BGR2GRAY);
-    cv::imwrite("/Users/jw.hu/Desktop/e89ba7d5-0c2b-47c6-9651-fe25cccc0c58-gray.bmp", img);
 
 
     
