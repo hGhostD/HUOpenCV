@@ -46,9 +46,5 @@ int main(int argc, const char * argv[]) {
     // 第七章
     lean_RNG();
     // 第八章
-
-
-
-    
     return 0;
 }
