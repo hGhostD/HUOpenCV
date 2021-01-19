@@ -44,7 +44,9 @@ int main(int argc, const char * argv[]) {
 //    example_6_2();
 //    example_6_3();
     // 第七章
-    lean_RNG();
+//    lean_RNG();
     // 第八章
+    detectSquare();
+    
     return 0;
 }

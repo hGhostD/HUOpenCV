@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+void detectSquare();
+
 #endif /* EighthClass_hpp */
