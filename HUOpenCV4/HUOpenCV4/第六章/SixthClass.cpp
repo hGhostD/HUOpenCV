@@ -56,8 +56,12 @@ void draw_line() {
     pp[0][2] = cv::Point(600, 900);
     pp[0][3] = cv::Point(700, 800);
     pp[0][4] = cv::Point(600, 700);
+    
+    pp[1][0] = cv::Point(200, 200);
+    pp[1][1] = cv::Point(400, 400);
+    pp[1][2] = cv::Point(100, 200);
     int ppcount[] = { 5 };
-    const Point* pps[1] = { pp[0] };
+    const Point* pps[1] = { pp[0], pp[1] };
     polylines(backView, pps, ppcount, 1, true, CV_RGB(32, 233, 12));
     // 文字
     putText(backView, "OpenCV", Point(700, 500), FONT_HERSHEY_COMPLEX, 2, CV_RGB(30, 12, 255));

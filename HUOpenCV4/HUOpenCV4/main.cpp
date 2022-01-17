@@ -40,13 +40,13 @@ int main(int argc, const char * argv[]) {
 //    example_5_5();
 //    example_5_6();
     // 第六章
-//    draw_line();
+    draw_line();
 //    example_6_2();
 //    example_6_3();
     // 第七章
 //    lean_RNG();
     // 第八章
-    detectSquare();
+//    detectSquare();
     
     return 0;
 }
