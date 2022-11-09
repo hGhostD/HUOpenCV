@@ -26,7 +26,7 @@ int main(int argc, const char * argv[]) {
 //    camera_test();
 //    write_test("/Users/jw.hu/Desktop/OpenCV_Source/tree.avi");
     // 第三章
-//    learn();
+    learn();
     // 第四章
 //    mat_test();
 //    mat_copy();
@@ -40,7 +40,7 @@ int main(int argc, const char * argv[]) {
 //    example_5_5();
 //    example_5_6();
     // 第六章
-    draw_line();
+//    draw_line();
 //    example_6_2();
 //    example_6_3();
     // 第七章

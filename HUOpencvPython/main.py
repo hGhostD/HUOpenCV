@@ -20,7 +20,7 @@ if __name__ == '__main__':
     ret, binary = cv2.threshold(gray, 80, 255, cv2.THRESH_BINARY_INV)
     cv2.imshow("binary", binary)
 
-    element = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))  # 3 * 3 正方形，8位uchar型，全1结构元素
+    element = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))  # 3 * 3 正方形,8位uchar型,全1结构元素
     binary = cv2.morphologyEx(binary, cv2.MORPH_CLOSE, element)
 
     cv2.imshow("morphology", binary)

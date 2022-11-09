@@ -13,7 +13,8 @@ using namespace std;
 using namespace cv;
 
 void showImage() {
-    cv::Mat img = cv::imread("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg");
+//    cv::Mat img = cv::imread("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg");
+    cv::Mat img = cv::imread("/Users/hujiawen/Downloads/1.jpg");
     
     if (img.empty()) { return; }
     // 当直接使用 imshow 方法时 会自动运行 namedWindow 方法创建一个 window

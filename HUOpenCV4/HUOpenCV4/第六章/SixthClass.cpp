@@ -12,6 +12,7 @@ using namespace cv;
 using namespace std;
 
 void draw_line() {
+    /*
     Mat backView(1000, 1000, CV_32FC3);
     
     // 画圆
@@ -83,6 +84,7 @@ void draw_line() {
     moveWindow("draw", 500, 0);
     imshow("draw", backView);
     waitKey();
+     */
 }
 
 void example_6_2() {
