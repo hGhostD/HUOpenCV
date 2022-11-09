@@ -1,12 +1,3 @@
----
-layout: js
-title: 微信小程序使用 OpenCV.js 开发
-date: 2022-11-09 13:37:40
-tags:
-- js 微信小程序 OpenCV
-categories: 
-- js
----
 由于微信小程序限制，无法直接使用 OpenCV.js 进行图形识别处理，需要使用 WebAssmbly 技术进行环境搭建。参考网上资料进行尝试。
 
 ## 1. 准备工作
