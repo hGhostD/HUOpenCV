@@ -580,8 +580,8 @@
             var t = process["hrtime"]();
             return t[0] * 1e3 + t[1] / 1e6
           }
-        } else _emscripten_get_now = () => performance.now();
-
+        } else _emscripten_get_now = () => Date.now();
+        
         function ExitStatus(status) {
           this.name = "ExitStatus";
           this.message = "Program terminated with exit(" + status + ")";
