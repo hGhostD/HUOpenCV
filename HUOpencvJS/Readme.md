@@ -11,7 +11,7 @@
 white_list = makeWhiteList([core, imgproc])
 ```
 
-构建文件 build_js.py 童谣需要复制并进行修改，命名为 build_wx_js.py 。
+构建文件 build_js.py 同样需要复制并进行修改，命名为 build_wx_js.py 。
 修改其中内容 `parser.add_argument('--config', default=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'opencv_wx_js.config.py'),
 ` 调整为刚才的配置文件。
 
@@ -227,6 +227,20 @@ Module["imshow"] = function (canvasSource, mat) {
 ![](https://s2.loli.net/2022/11/09/OBpeZgY1h98EKUt.png)
 
 完整 demo 提交到 https://github.com/hGhostD/HUOpenCV/tree/master/HUOpencvJS 
+
+
+
+### Can't find variable: performance
+真机运行报错 
+``` 
+index.js:1 (in promise) MiniProgramError
+Can't find variable: performance
+ReferenceError: Can't find variable: performance
+```
+需要修改 opencv.js 中 
+`_emscripten_get_now = () => performance.now();` 更改为 `_emscripten_get_now = () => Date.now();`
+
+
 
 ## 6. 参考
 
