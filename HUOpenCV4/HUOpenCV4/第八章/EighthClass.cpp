@@ -16,10 +16,27 @@ Mat Maze;
 vector<Point>Chunk;
 void MazeTrack(int r,int c);
 
+void imreadAndWrite() {
+    Mat img = imread("/Users/hujiawen/Downloads/wuwu.jpg", IMREAD_GRAYSCALE);
+
+    if (img.empty() == true) {
+        cout << "读取图片为空" << endl;
+        return;
+    }
+
+    cout << img.channels() << endl;
+    
+    imshow("8-1", img);
+    waitKey();
+    
+    imwrite("/Users/hujiawen/Desktop/hu/HUOpenCV/HUOpenCV4/HUOpenCV4/第八章/test.jpg", img);
+}
+
+
 void detectSquare() {
 
     Mat element = getStructuringElement(MORPH_RECT, Size(17, 17));
-    Mat img = cv::imread("/Users/hujiawen/Desktop/imageBuffer.jpg");
+    Mat img = cv::imread("/Users/hujiawen/Download/wuwu.jpg");
     
     Mat video;
     dilate(img, video, element);

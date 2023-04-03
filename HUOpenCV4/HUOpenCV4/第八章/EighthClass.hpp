@@ -11,6 +11,8 @@
 
 #include <stdio.h>
 
+
+void imreadAndWrite();
 void detectSquare();
 
 #endif /* EighthClass_hpp */

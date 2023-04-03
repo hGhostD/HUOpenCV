@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include <opencv.hpp>
+#include <opencv2/opencv.hpp>
 #include "SecondClass.hpp"
 #include "ThirdClass.hpp"
 #include "FourthClass.hpp"
@@ -15,6 +15,9 @@
 #include "SixthClass.hpp"
 #include "SeventhClass.hpp"
 #include "EighthClass.hpp"
+#include "TestSpace.hpp"
+#include "NinthClass.hpp"
+#include "Tenth.hpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -26,7 +29,7 @@ int main(int argc, const char * argv[]) {
 //    camera_test();
 //    write_test("/Users/jw.hu/Desktop/OpenCV_Source/tree.avi");
     // 第三章
-    learn();
+//    learn();
     // 第四章
 //    mat_test();
 //    mat_copy();
@@ -47,6 +50,16 @@ int main(int argc, const char * argv[]) {
 //    lean_RNG();
     // 第八章
 //    detectSquare();
+//    imreadAndWrite();
+    // 第九章
+    showWindows_9();
+    // 第十章
+//    createBorder();
+//    threshold();
+    
+//    detect_sharpness();
     
     return 0;
 }
+
+
