@@ -12,5 +12,7 @@
 #include <stdio.h>
 
 void detect_sharpness();
+void test_books();
+ 
 
 #endif /* TestSpace_hpp */

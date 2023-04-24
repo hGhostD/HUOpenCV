@@ -18,13 +18,16 @@
 #include "TestSpace.hpp"
 #include "NinthClass.hpp"
 #include "Tenth.hpp"
+#include "Eleventh.hpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
+    
     // 第二章
 //    showImage();
 //    cv::Mat img = cv::imread("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg");
 //    cv::Mat img = cv::imread("/Users/mac/Desktop/OpenCV_Source/apple.jpg");
+    
     
 //    camera_test();
 //    write_test("/Users/jw.hu/Desktop/OpenCV_Source/tree.avi");
@@ -52,12 +55,17 @@ int main(int argc, const char * argv[]) {
 //    detectSquare();
 //    imreadAndWrite();
     // 第九章
-    showWindows_9();
+//    showWindows_9();
     // 第十章
 //    createBorder();
 //    threshold();
+    // 第十一章
+//    resizeCompare();
+//    showHist();
+//    copy_img_split();
     
 //    detect_sharpness();
+    test_books();
     
     return 0;
 }

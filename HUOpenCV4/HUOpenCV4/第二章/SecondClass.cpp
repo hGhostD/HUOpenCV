@@ -16,14 +16,16 @@ void showImage() {
 //    cv::Mat img = cv::imread("/Users/jw.hu/Desktop/OpenCV_Source/apple.jpg");
     cv::Mat img = cv::imread("/Users/hujiawen/Downloads/1.jpg");
     
+    cv::Mat m = cv::Mat(img, Range(100, 200), Range(500, 700));
+    imshow("range", m);
+    
     if (img.empty()) { return; }
     // 当直接使用 imshow 方法时 会自动运行 namedWindow 方法创建一个 window
 //    cv::namedWindow("2-1", cv::WINDOW_OPENGL);
     cv::imshow("2-1", img);
     
-    cv::waitKey(0);
-    cv::destroyWindow("2-1");
-    
+//    cv::waitKey(5000);
+//    cv::destroyWindow("2-1");
 }
 
 void showVideo() {
