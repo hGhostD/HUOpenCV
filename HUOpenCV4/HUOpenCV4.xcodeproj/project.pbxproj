@@ -83,6 +83,7 @@
 		E09C164029DABD4E00AF3EF4 /* NinthClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E09C155329DAB3F900AF3EF4 /* NinthClass.cpp */; };
 		E09C164129DABD5300AF3EF4 /* Tenth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E09C155529DAB3F900AF3EF4 /* Tenth.cpp */; };
 		E09C164229DABD6100AF3EF4 /* TestSpace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E09C154F29DAB3E600AF3EF4 /* TestSpace.cpp */; };
+		E0EEDE432A064EDD00964ABC /* TwelfthClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0EEDE412A064EDD00964ABC /* TwelfthClass.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -825,6 +826,8 @@
 		E09C155329DAB3F900AF3EF4 /* NinthClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NinthClass.cpp; sourceTree = "<group>"; };
 		E09C155529DAB3F900AF3EF4 /* Tenth.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tenth.cpp; sourceTree = "<group>"; };
 		E09C155629DAB3F900AF3EF4 /* Tenth.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tenth.hpp; sourceTree = "<group>"; };
+		E0EEDE412A064EDD00964ABC /* TwelfthClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TwelfthClass.cpp; sourceTree = "<group>"; };
+		E0EEDE422A064EDD00964ABC /* TwelfthClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TwelfthClass.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -949,7 +952,6 @@
 		7590A61B23A0DDB3009DD837 /* HUOpenCV4 */ = {
 			isa = PBXGroup;
 			children = (
-				E08C4FB729DEB51F009F4488 /* 第十一章 */,
 				7590A61C23A0DDB3009DD837 /* main.cpp */,
 				755A14FD23A362280077C1CC /* HUOpenCV4.entitlements */,
 				8525CC0B23A66B150066EF26 /* Info.plist */,
@@ -963,6 +965,8 @@
 				E09C154E29DAB3E600AF3EF4 /* TestSpace */,
 				E09C155129DAB3F900AF3EF4 /* 第九章 */,
 				E09C155429DAB3F900AF3EF4 /* 第十章 */,
+				E08C4FB729DEB51F009F4488 /* 第十一章 */,
+				E0EEDE402A064E7800964ABC /* 第十二章 */,
 			);
 			path = HUOpenCV4;
 			sourceTree = "<group>";
@@ -1748,6 +1752,15 @@
 			path = "第十章";
 			sourceTree = "<group>";
 		};
+		E0EEDE402A064E7800964ABC /* 第十二章 */ = {
+			isa = PBXGroup;
+			children = (
+				E0EEDE412A064EDD00964ABC /* TwelfthClass.cpp */,
+				E0EEDE422A064EDD00964ABC /* TwelfthClass.hpp */,
+			);
+			path = "第十二章";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1808,6 +1821,7 @@
 				E08C4FBA29DEB536009F4488 /* Eleventh.cpp in Sources */,
 				E09C164229DABD6100AF3EF4 /* TestSpace.cpp in Sources */,
 				E09C164129DABD5300AF3EF4 /* Tenth.cpp in Sources */,
+				E0EEDE432A064EDD00964ABC /* TwelfthClass.cpp in Sources */,
 				E09C164029DABD4E00AF3EF4 /* NinthClass.cpp in Sources */,
 				75DDD5D82421F2EB0048C4E1 /* SixthClass.cpp in Sources */,
 				75C7611323D5A93F00276CB9 /* FifthClass.cpp in Sources */,

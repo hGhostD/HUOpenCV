@@ -171,7 +171,7 @@ void test_mousecallback() {
     waitKey();
 }
 
-void test_books() {
+void test_iterator() {
     double t = (double)getTickCount();
     // do something ...
     
@@ -179,4 +179,110 @@ void test_books() {
     
     t = ((double)getTickCount() - t)/getTickFrequency();
     printf("\n %f", t);
+    
+    
+    Mat_<Vec3b>::iterator it = img.begin<Vec3b>();
+    Mat_<Vec3b>::iterator itend = img.end<Vec3b>();
+    
+    for(; it != itend; ++it) {
+        printf("%d ", (*it)[0]);
+    }
+}
+
+void test_copyTo() {
+    Mat img = imread("/Users/hujiawen/Desktop/lenna.jpg");
+    Mat logo = imread("/Users/hujiawen/Downloads/nike.png", IMREAD_UNCHANGED);
+    double scale = (double)logo.cols / (double)logo.rows;
+    
+    int width = 200;
+    int height = 200 / scale;
+    Rect rect(img.cols - 100 - width, 100, width, height);
+    cv::resize(logo, logo, rect.size());
+    
+    Mat alpha;
+    
+    vector<Mat> channels;
+    split(logo, channels);
+    alpha = channels[3];
+//    threshold(alpha, alpha, 127, 255, THRESH_BINARY);
+    double t = (double)getTickCount();
+
+//    for(int row = 0; row < alpha.rows; ++row) {
+//        for(int col = 0; col < alpha.cols; ++col) {
+//            uchar & c = alpha.at<uchar>(row, col);
+//            if (c > 125) {
+//                c = 0;
+//            } else {
+//                c = 255;
+//            }
+//        }
+//    }
+//    Mat_<uchar>::iterator it = alpha.begin<uchar>();
+//    Mat_<uchar>::iterator end = alpha.end<uchar>();
+//    for (; it != end; ++it) {
+//        uchar pt = *it;
+//        if (pt > 125) {
+//            pt = 0;
+//        } else {
+//            pt = 255;
+//        }
+//        *it = pt;
+//    }
+//
+//    uchar *p = alpha.data;
+//    for (int i = 0; i < alpha.total(); ++i) {
+//        uchar *v = &p[i];
+//        if (*v > 125) {
+//            *v = 0;
+//        } else {
+//            *v = 255;
+//        }
+//        p[i] = *v;
+//    }
+    t = ((double)getTickCount() - t);
+    std::cout << "time:" << t << std::endl;
+    /**
+     使用 Mask 进行图片加载
+     1. 原始图片设置 ROI 区域
+     2. logo 图片 变换为 ROI 区域同样尺寸
+     3. logo 图片 copyTo 到 ROI 区域
+     */
+    
+    std::cout << rect << std::endl;
+    Mat roi = img(rect);
+    cvtColor(alpha, alpha, COLOR_GRAY2BGR);
+//    alpha.copyTo(roi);
+    Mat temp;
+    alpha.copyTo(roi, alpha);
+//    roi.copyTo(temp, alpha);
+//    temp.copyTo(roi);
+//    roi = temp;
+//    addWeighted(img, 0.5, imgCopy, 0.5, 0, img);
+    imshow("roi", img);
+    waitKey(3000);
+    
+}
+
+void test_books() {
+    
+    test_copyTo();
+    return;
+    
+    Mat img = imread("/Users/hujiawen/Desktop/lenna.jpg");
+    Mat logo = imread("/Users/hujiawen/Downloads/nike.png", IMREAD_UNCHANGED);
+    Mat roi = img(Rect(100, 100, 200, 100));
+    cv::resize(logo, logo, Size(200, 100));
+    Mat alpha;
+    
+    vector<Mat> channels;
+    split(logo, channels);
+    alpha = channels[3];
+    Mat mask = Mat::zeros(100, 200, CV_8UC1);
+    circle(mask, Point(50, 50), 50, Scalar(255), -1);
+//    Mat l = roi.clone();
+    Mat dst = Mat::zeros(roi.size(), roi.type());
+    roi.copyTo(dst, alpha);
+    roi = dst;
+    imshow("logo", roi);
+    waitKey(3000);
 }

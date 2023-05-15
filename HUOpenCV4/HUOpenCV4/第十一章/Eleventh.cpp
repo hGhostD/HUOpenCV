@@ -71,3 +71,23 @@ void copy_img_split() {
     waitKey();
 
 }
+
+void test_warpPerspective() {
+    Mat lenna = imread("/Users/hujiawen/Desktop/lenna.jpg");
+    
+    Mat transform;
+    Point2f p11(0, 0);
+    Point2f p12(100, 0);
+    Point2f p13(100, 100);
+    Point2f p14(0, 1000);
+    Point2f p1[4] = {p11, p12, p13, p14};
+    Point2f p2[4] = {Point2f(10, 10), Point2f(20, 30), Point2f(80, 80), Point2f(0,90)};
+    
+    transform = getPerspectiveTransform(p1, p2);
+    
+    warpPerspective(lenna, lenna, transform, lenna.size());
+    imshow("lenna", lenna);
+    waitKey();
+
+}
+

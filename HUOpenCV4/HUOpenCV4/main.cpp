@@ -19,6 +19,7 @@
 #include "NinthClass.hpp"
 #include "Tenth.hpp"
 #include "Eleventh.hpp"
+#include "TwelfthClass.hpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -63,9 +64,13 @@ int main(int argc, const char * argv[]) {
 //    resizeCompare();
 //    showHist();
 //    copy_img_split();
-    
+//    test_warpPerspective();
+        
+    using namespace chapter_12;
+//    chapter_12::show();
+    chapter_12::test();
 //    detect_sharpness();
-    test_books();
+//    test_books();
     
     return 0;
 }

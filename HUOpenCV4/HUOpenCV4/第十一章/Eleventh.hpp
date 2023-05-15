@@ -18,5 +18,6 @@ using namespace cv;
 void resizeCompare();
 void showHist();
 void copy_img_split();
+void test_warpPerspective();
 
 #endif /* Eleventh_hpp */
