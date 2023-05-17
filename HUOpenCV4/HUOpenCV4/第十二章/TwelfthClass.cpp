@@ -6,9 +6,19 @@
 //  Copyright © 2023 jw.hu. All rights reserved.
 //
 
+/**
+ 
+ 
+ */
+
 #include "TwelfthClass.hpp"
 
 namespace chapter_12 {
+
+inline cv::Mat lenna() {
+    return cv::imread("/Users/hujiawen/Desktop/lenna.jpg");
+}
+
 void show() {
 //    cv::Mat lenna = cv::imread("/Users/hujiawen/Desktop/lenna.jpg");
 //    cv::imshow("12", lenna);
@@ -20,10 +30,9 @@ void show() {
     cv::waitKey();
 }
 
+
+
 void test() {
-    int a = 50;
-    double b = a;
-    
-    std::cout << &b << std::endl;
 }
+
 }
