@@ -138,3 +138,117 @@ void example_5_6() {
     
     waitKey();
 }
+
+namespace chapter_05 {
+
+void test_01() {
+    cv::Mat3b mat(100, 100);
+    
+    cv::circle(mat, cv::Point(50, 50), 50, cv::Scalar(0, 0, 255));
+    
+    imshow("3b", mat);
+    waitKey();
+}
+
+void test_02() {
+    cv::Mat3b mat(100, 100);
+    
+    for (int row = 0; row < mat.rows; row++) {
+        for (int col = 0; col < mat.cols; col++) {
+            if (row >= 20 && row <= 40 && col >= 5 && col <= 20) {
+                mat.at<Vec3b>(cv::Point(row, col)) = Vec3b(0, 255, 0);
+            }
+        }
+    }
+    
+    imshow("green", mat);
+    waitKey();
+}
+
+void test_03() {
+    cv::Mat3b mat(100, 100);
+    
+    for (int row = 0; row < mat.rows; row++) {
+        Vec3b *p = mat.ptr<Vec3b>(row);
+        for (int col = 0; col < mat.cols; col++) {
+            if (row >= 20 && row <= 40 && col >= 5 && col <= 20) {
+//                mat.at<Vec3b>(cv::Point(row, col)) = Vec3b(0, 255, 0);
+                *(p + col) = Vec3b(0, 255,0);
+            }
+        }
+    }
+    imshow("ptr", mat);
+    waitKey();
+}
+
+void test_04() {
+    cv::Mat1b mat(210, 210);
+    
+    for (int row = 0; row < mat.rows; row += 10) {
+        int x = (210 - row) / 2;
+        cv::Rect rect(x, row, 210 - 2 * x, 10);
+        cout << rect << endl;
+        cv::Mat tmp = mat(rect);
+        tmp.setTo(cv::Scalar(255));
+    }
+    
+    imshow("tmp", mat);
+    waitKey();
+}
+
+void test_05() {
+    cv::Mat img = cv::imread("/Users/hujiawen/Desktop/OpenCV_Source/apple.jpg");
+    
+    Rect r1(5, 10, 20, 30);
+    Rect r2(50, 60, 20, 30);
+    
+    cv::Mat m1 = img(r1);
+    cv::Mat m2 = img(r2);
+    
+    cv::bitwise_not(m1, m1);
+    cv::bitwise_not(m2, m2);
+    imshow("result", img);
+    
+    waitKey();
+    
+}
+
+void test_06() {
+    cv::Mat img = cv::imread("/Users/hujiawen/Desktop/OpenCV_Source/apple.jpg");
+    cv::Mat dst;
+
+//    cv::compare(img, mask, dst, cv::CMP_GE);
+    vector<Mat> channel;
+    cv::split(img, channel);
+    cv::Mat green = channel[1];
+    
+    cv::Mat clone1 = green.clone();
+    cv::Mat clone2 = green.clone();
+    
+    double minVal, maxVal;
+    cv::minMaxLoc(green, &minVal, &maxVal);
+    cout << "min:"<< minVal << endl
+         << "max:" << maxVal << endl;
+    
+    double v1 = (maxVal - minVal) / 2;
+    clone1.setTo(v1);
+    
+    clone2.setTo(0);
+    cv::compare(green, clone1, clone2, cv::CMP_GE);
+    
+    cv::subtract(green, clone2, clone2);
+    imshow("c2", clone2);
+    
+    waitKey();
+}
+
+void test() {
+//    test_01();
+//    test_02();
+//    test_03();
+//    test_04();
+//    test_05();
+    test_06();
+//    cout << "Chapter05" << endl;
+}
+};

@@ -17,4 +17,10 @@ void example_5_2();
 void example_5_4();
 void example_5_5();
 void example_5_6();
+
+namespace chapter_05 {
+
+void test();
+
+};
 #endif /* FifthClass_hpp */

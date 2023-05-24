@@ -11,6 +11,10 @@
 
 #include <stdio.h>
 
-void learn();
+namespace chapter_03 {
+
+void test();
+
+}
 
 #endif /* ThirdClass_hpp */

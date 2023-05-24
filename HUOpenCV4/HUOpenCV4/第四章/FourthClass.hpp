@@ -17,4 +17,7 @@ void example_4_1();
 void range_copy();
 void test_4_a();
 
+namespace chapter_04 {
+void test();
+}
 #endif /* FourthClass_hpp */

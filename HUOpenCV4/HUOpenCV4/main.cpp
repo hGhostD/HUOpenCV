@@ -22,6 +22,9 @@
 #include "TwelfthClass.hpp"
 #include "Thireteenth.hpp"
 
+using namespace chapter_03;
+using namespace chapter_04;
+using namespace chapter_05;
 using namespace chapter_12;
 using namespace chapter_13;
 
@@ -35,13 +38,15 @@ int main(int argc, const char * argv[]) {
 //    camera_test();
 //    write_test("/Users/jw.hu/Desktop/OpenCV_Source/tree.avi");
     // 第三章
-//    learn();
+//    chapter_03::test();
     // 第四章
+//    chapter_04::test();
 //    mat_test();
 //    mat_copy();
 //    example_4_1();
 //    test_4_a();
     // 第五章
+    chapter_05::test();
 //    learn_abs();
 //    example_5_1_a();
 //    example_5_2();
@@ -70,7 +75,7 @@ int main(int argc, const char * argv[]) {
         
 //    chapter_12::test();
     
-    chapter_13::test();
+//    chapter_13::test();
 //    detect_sharpness();
 //    test_books();
     
