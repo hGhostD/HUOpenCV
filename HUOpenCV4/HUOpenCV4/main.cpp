@@ -21,12 +21,14 @@
 #include "Eleventh.hpp"
 #include "TwelfthClass.hpp"
 #include "Thireteenth.hpp"
+#include "Fourteenth.hpp"
 
 using namespace chapter_03;
 using namespace chapter_04;
 using namespace chapter_05;
 using namespace chapter_12;
 using namespace chapter_13;
+using namespace chapter_14;
 
 int main(int argc, const char * argv[]) {
     // 第二章
@@ -46,7 +48,7 @@ int main(int argc, const char * argv[]) {
 //    example_4_1();
 //    test_4_a();
     // 第五章
-    chapter_05::test();
+//    chapter_05::test();
 //    learn_abs();
 //    example_5_1_a();
 //    example_5_2();
@@ -78,7 +80,14 @@ int main(int argc, const char * argv[]) {
 //    chapter_13::test();
 //    detect_sharpness();
 //    test_books();
+//    mao_book::findConvexHull();
+//    mao_book::calcHistTest();
     
+//    chapter_14::test();
+//    chapter_14::test_14_1();
+    chapter_14::test_convexHUll();
+    
+//    qr_test::detect_qr();
     return 0;
 }
 

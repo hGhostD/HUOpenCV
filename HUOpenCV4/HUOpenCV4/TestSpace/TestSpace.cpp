@@ -8,6 +8,10 @@
 
 #include "TestSpace.hpp"
 #include <opencv.hpp>
+#include <opencv2/objdetect/objdetect.hpp>
+#include <opencv2/imgcodecs/imgcodecs.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/imgcodecs.hpp>
 
 using namespace cv;
 using namespace std;
@@ -285,4 +289,143 @@ void test_books() {
     roi = dst;
     imshow("logo", roi);
     waitKey(3000);
+}
+
+namespace mao_book {
+void findConvexHull() {
+    
+    Mat img(600, 600, CV_8UC3);
+    RNG &rng = theRNG();
+    
+    while (1) {
+        char key;
+        int count = static_cast<int>(rng) % 100 + 3;
+        vector<Point> points;
+        for(int i = 0; i < count; i++) {
+            Point point;
+            point.x = rng.uniform(img.cols / 4, img.cols * 3 / 4);
+            point.y = rng.uniform(img.rows / 4, img.rows * 3 / 4);
+            
+            points.push_back(point);
+        }
+        
+        if(points.empty()) {
+            continue;
+        }
+        
+        vector<int> hull;
+        convexHull(points, hull);
+        
+        
+        img = Scalar::all(0);
+        for(int i = 0; i < count; i++)
+            circle(img, points[i], 3, Scalar(rng.uniform(0, 255), rng.uniform(0, 255), rng.uniform(0, 255)), FILLED, LINE_AA);
+        
+        int hullcount = static_cast<int>(hull.size());
+        Point point0 = points[hull[hullcount - 1]];
+        
+        for(int i = 0; i < hullcount; i++)
+        {
+            Point point = points[hull[i]];
+            line(img, point0, point, Scalar(255, 255, 255), 2, LINE_AA);
+            point0 = point;
+        }
+        
+        imshow("img", img);
+        key = static_cast<char>(waitKey());
+        if (key == 27 || key == 'q' || key == 'Q')
+            break;
+        
+    }
+
+}
+
+int detect_sharpness(const cv::Mat & image) {
+    cv::Mat lap;
+    cv::Scalar mu, sigma;
+    
+    int image_width = image.cols;
+    int image_height = image.rows;
+    
+    if (image_width <= 0 || image_height <= 0) {
+        return 0;
+    }
+
+    cv::Laplacian(image, lap, CV_64F);
+    cv::meanStdDev(lap, mu, sigma);
+    return static_cast<int>(sigma.val[0]*sigma.val[0]);
+}
+
+void calcHistTest() {
+//    cv::Mat le = cv::imread("/Users/hujiawen/Desktop/lenna.jpg", 0);
+    cv::Mat le = cv::imread("/Users/hujiawen/Downloads/4489fb70-5c1a-42b9-80ee-823e5dca020e.jpeg", 0);
+    
+
+    MatND disHist;
+    int dims = 1;
+    float hranges[] = { 0, 255 };
+    const float *ranges[] = { hranges };
+    int size = 256;
+    int channels = 0;
+    
+    calcHist(&le, 1, &channels, Mat(), disHist, dims, &size, ranges);
+    int scale = 1;
+    
+    Mat dstImage(size * scale, size, CV_8U, Scalar(0));
+    double minValue = 0;
+    double maxValue = 0;
+    minMaxLoc(disHist, &minValue, &maxValue, 0, 0);
+    
+    int hpt = saturate_cast<int>(0.9 * size);
+    for (int i = 0; i < 256; i++) {
+        float binValue = disHist.at<float>(i);
+        int realValue = saturate_cast<int>(binValue * hpt / maxValue);
+        rectangle(dstImage, Point(i * scale, size - 1), Point((i + 1) * scale - 1, size - realValue), Scalar(255));
+        
+    }
+    
+    imshow("yiwei", dstImage);
+    
+//    cv::Mat rMat = le(cv::Rect(0,0, 100, 100));
+    for(int i = 0; i < 1; i++) {
+        
+        int sharpness = detect_sharpness(le(cv::Rect(0, i * 100, 100, 100)));
+        cout << "Sharpness:" << sharpness << endl;
+    }
+    
+    waitKey(0);
+}
+
+}
+
+namespace qr_test {
+
+void detect_qr() {
+    
+    cv::Mat mat;
+    cv::Mat img = cv::imread("/Users/hujiawen/Desktop/2.png", cv::IMREAD_COLOR);
+    
+    
+    QRCodeDetector qrDecoder;
+
+    Mat bbox, rectifiedImage;
+
+    std::string data = qrDecoder.detectAndDecode(img, bbox, rectifiedImage);
+    if(data.length()>0)
+    {
+      cout << "Decoded Data : " << data << endl;
+
+      rectifiedImage.convertTo(rectifiedImage, CV_8UC3);
+      imshow("Rectified QRCode", rectifiedImage);
+
+      waitKey(0);
+    }
+    else
+      cout << "QR Code not detected" << endl;
+    
+    
+    imshow("qr", img);
+    waitKey();
+}
+
 }

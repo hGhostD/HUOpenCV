@@ -14,5 +14,12 @@
 void detect_sharpness();
 void test_books();
  
+namespace mao_book {
+void findConvexHull();
+void calcHistTest();
+}
 
+namespace qr_test {
+void detect_qr();
+}
 #endif /* TestSpace_hpp */
