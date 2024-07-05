@@ -22,6 +22,8 @@
 #include "TwelfthClass.hpp"
 #include "Thireteenth.hpp"
 #include "Fourteenth.hpp"
+#include "HUDetectCircle.hpp"
+#include "HUMatchTemplate.hpp"
 
 using namespace chapter_03;
 using namespace chapter_04;
@@ -29,6 +31,8 @@ using namespace chapter_05;
 using namespace chapter_12;
 using namespace chapter_13;
 using namespace chapter_14;
+using namespace HUDetect;
+using namespace HUMatch;
 
 int main(int argc, const char * argv[]) {
     // 第二章
@@ -85,9 +89,13 @@ int main(int argc, const char * argv[]) {
     
 //    chapter_14::test();
 //    chapter_14::test_14_1();
-    chapter_14::test_convexHUll();
+//    chapter_14::test_convexHUll();
     
 //    qr_test::detect_qr();
+//    HUDetect::detect_circle();
+    
+    HUMatch::test();
+    
     return 0;
 }
 

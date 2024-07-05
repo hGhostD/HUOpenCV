@@ -11,6 +11,7 @@
                 <view class="weui-media-box">
                     <button bindtap="btnRun1" class="marginTop10" type="primary">灰度化</button>
                     <button bindtap="btnRun2" class="marginTop10" type="primary">边缘检测</button>
+                    <button bindtap="btnRun3" class="marginTop10" type="primary">Colorthief</button>
                 </view>
             </view>
         </view>

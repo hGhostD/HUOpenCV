@@ -15,6 +15,7 @@
 		75C7611323D5A93F00276CB9 /* FifthClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75C7611123D5A93F00276CB9 /* FifthClass.cpp */; };
 		75DDD5D82421F2EB0048C4E1 /* SixthClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75DDD5D62421F2EB0048C4E1 /* SixthClass.cpp */; };
 		85B5485623AA7928002ACCFA /* FourthClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85B5485423AA7928002ACCFA /* FourthClass.cpp */; };
+		E081901E2B83321A00EA1CA2 /* HUMatchTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E081901C2B83321A00EA1CA2 /* HUMatchTemplate.cpp */; };
 		E08C4FBA29DEB536009F4488 /* Eleventh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08C4FB829DEB536009F4488 /* Eleventh.cpp */; };
 		E08DF7F72A1384690050E123 /* Thirteenth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E08DF7F62A1384690050E123 /* Thirteenth.cpp */; };
 		E09C164029DABD4E00AF3EF4 /* NinthClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E09C155329DAB3F900AF3EF4 /* NinthClass.cpp */; };
@@ -249,6 +250,7 @@
 		E0BC68112AE8F1170035FF1C /* libopencv_quality.4.8.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BC672D2AE8F1160035FF1C /* libopencv_quality.4.8.1.dylib */; };
 		E0BC68122AE8F1170035FF1C /* libopencv_bioinspired.4.8.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BC672E2AE8F1160035FF1C /* libopencv_bioinspired.4.8.1.dylib */; };
 		E0BC68162AE8F1E80035FF1C /* Fourteenth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0BC68142AE8F1E80035FF1C /* Fourteenth.cpp */; };
+		E0E338392B6C8D9C000DB0E4 /* HUDetectCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0E338372B6C8D9C000DB0E4 /* HUDetectCircle.cpp */; };
 		E0EEDE432A064EDD00964ABC /* TwelfthClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0EEDE412A064EDD00964ABC /* TwelfthClass.cpp */; };
 /* End PBXBuildFile section */
 
@@ -284,6 +286,8 @@
 		85B5485423AA7928002ACCFA /* FourthClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FourthClass.cpp; sourceTree = "<group>"; };
 		85B5485523AA7928002ACCFA /* FourthClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FourthClass.hpp; sourceTree = "<group>"; };
 		E07791E82A1765AD0042B4DE /* libncurses.5.4.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libncurses.5.4.tbd; path = usr/lib/libncurses.5.4.tbd; sourceTree = SDKROOT; };
+		E081901C2B83321A00EA1CA2 /* HUMatchTemplate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HUMatchTemplate.cpp; sourceTree = "<group>"; };
+		E081901D2B83321A00EA1CA2 /* HUMatchTemplate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HUMatchTemplate.hpp; sourceTree = "<group>"; };
 		E083569E2A1363320048A126 /* libopencv_saliency.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_saliency.a; sourceTree = "<group>"; };
 		E083569F2A1363320048A126 /* libopencv_photo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_photo.a; sourceTree = "<group>"; };
 		E08356A02A1363320048A126 /* libopencv_bgsegm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_bgsegm.a; sourceTree = "<group>"; };
@@ -649,6 +653,8 @@
 		E0BC672E2AE8F1160035FF1C /* libopencv_bioinspired.4.8.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_bioinspired.4.8.1.dylib; path = ../../../../../../opt/homebrew/Cellar/opencv/4.8.1_1/lib/libopencv_bioinspired.4.8.1.dylib; sourceTree = "<group>"; };
 		E0BC68142AE8F1E80035FF1C /* Fourteenth.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Fourteenth.cpp; sourceTree = "<group>"; };
 		E0BC68152AE8F1E80035FF1C /* Fourteenth.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Fourteenth.hpp; sourceTree = "<group>"; };
+		E0E338372B6C8D9C000DB0E4 /* HUDetectCircle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HUDetectCircle.cpp; sourceTree = "<group>"; };
+		E0E338382B6C8D9C000DB0E4 /* HUDetectCircle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HUDetectCircle.hpp; sourceTree = "<group>"; };
 		E0EEDE412A064EDD00964ABC /* TwelfthClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TwelfthClass.cpp; sourceTree = "<group>"; };
 		E0EEDE422A064EDD00964ABC /* TwelfthClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TwelfthClass.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1412,6 +1418,10 @@
 			children = (
 				E09C154F29DAB3E600AF3EF4 /* TestSpace.cpp */,
 				E09C155029DAB3E600AF3EF4 /* TestSpace.hpp */,
+				E0E338372B6C8D9C000DB0E4 /* HUDetectCircle.cpp */,
+				E0E338382B6C8D9C000DB0E4 /* HUDetectCircle.hpp */,
+				E081901C2B83321A00EA1CA2 /* HUMatchTemplate.cpp */,
+				E081901D2B83321A00EA1CA2 /* HUMatchTemplate.hpp */,
 			);
 			name = TestSpace;
 			path = HUOpenCV4/TestSpace;
@@ -1521,6 +1531,8 @@
 				7554DCAD23A882AB00B55DC2 /* ThirdClass.cpp in Sources */,
 				7516B619242CB3A90060C7A4 /* SeventhClass.cpp in Sources */,
 				75A9980923A36DC100AEA9A2 /* SecondClass.cpp in Sources */,
+				E081901E2B83321A00EA1CA2 /* HUMatchTemplate.cpp in Sources */,
+				E0E338392B6C8D9C000DB0E4 /* HUDetectCircle.cpp in Sources */,
 				85B5485623AA7928002ACCFA /* FourthClass.cpp in Sources */,
 				7516B61C242CB3BC0060C7A4 /* EighthClass.cpp in Sources */,
 				7590A61D23A0DDB3009DD837 /* main.cpp in Sources */,
